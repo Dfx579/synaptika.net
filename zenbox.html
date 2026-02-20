@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- SEO最適化タグ（YouTube/Pinterest/Bluesky対応） -->
+    <link rel="canonical" href="https://synaptika.net/zenbox">
+    <meta name="description" content="ZenBox : Libérez votre esprit en 10 minutes chrono. Évacuez pensées parasites, débloquez créativité. Technique ancestrale 100% gratuite & confidentielle.">
+    <meta property="og:title" content="ZenBox | Synaptika - Libérez votre esprit en 10 min">
+    <meta property="og:description" content="🧠 Vous tournez en boucle ? Technique ancestrale : Évacuez pensées parasites, débloquez créativité en 10 min. 100% gratuit • 100% confidentiel">
+    <meta property="og:url" content="https://synaptika.net/zenbox">
+    <meta property="og:image" content="https://synaptika.net/images/zenbox-thumb.jpg">
+  
+  　<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNN9NJ7QMG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QNN9NJ7QMG');
+</script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZenBox - L'expérience interactive gratuite de Synaptika. Libérez votre esprit en 10 minutes chrono.">
+    <meta name="keywords" content="ZenBox, Synaptika, développement personnel, Martinique, bien-être mental, technique ancestrale">
+    <title>ZenBox | Synaptika - L'expérience interactive gratuite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --primary: #7c3aed;
+            --secondary: #06b6d4;
+            --accent: #8b5cf6;
+            --light: #f3f4f6;
+            --dark: #1f2937;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .zenbox-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .zenbox-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="rgba(255,255,255,0.05)" fill-rule="nonzero"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+            opacity: 0.3;
+        }
+        
+                .zen-gif-container {
+            width: 400px;
+            height: 400px;
+            margin: 3rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .zen-gif {
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .section-content {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 1rem;
+        }
+        
+        .benefit-item, .privacy-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+            width: 100%;         　
+            max-width: 500px;
+        }
+        
+        .benefits-container, .privacy-container {
+            max-width: 450px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .benefit-icon, .check-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            width: 2rem;
+            text-align: center;
+            line-height: 1.5rem;
+            margin-top: 0.125rem;
+        }
+        
+        .benefit-text, .privacy-text {
+            flex: 1;
+        }
+        
+        .cta-button {
+            background: #ffd700;
+            color: #764ba2;
+            padding: 1rem 2.5rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
+        }
+        
+        .back-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-purple-600">Synaptika</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="text-gray-700 hover:text-purple-600 transition">Accueil</a>
+                <a href="./apropos.html" class="text-gray-700 hover:text-purple-600 transition">À propos</a>
+                <a href="./zenbox.html" class="text-purple-600 font-semibold">ZenBox</a>
+                
+            </div>
+            <button class="md:hidden">
+                <i data-feather="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero with Static Circle -->
+    <section class="zenbox-hero">
+                <div class="container mx-auto px-4 flex flex-col items-center text-center relative z-10 py-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">ZenBox :</h1>
+            <p class="text-2xl md:text-3xl text-white font-light mb-8">L'expérience interactive gratuite</p>
+            
+                        <div class="zen-gif-container">
+                <img src="./images/zenbox.gif" alt="ZenBox" class="zen-gif">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Introduction -->
+    <section class="section-content">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Vous tournez en boucle avec les mêmes pensées ?</h2>
+            
+            <div class="my-12">
+                <div class="benefit-item mx-auto max-w-md">
+                    <span class="benefit-icon">🧠</span>
+                    <span class="benefit-text">Libérez votre esprit en 10 minutes chrono</span>
+                </div>
+            </div>
+            
+            <p class="text-xl md:text-2xl mb-6">Vous tournez en boucle avec les mêmes pensées ?</p>
+            <p class="text-lg md:text-xl font-light">Cette technique ancestrale va déverrouiller votre mental en seulement 10 minutes.</p>
+        </div>
+    </section>
+
+    <!-- Section 3: What You'll Discover -->
+    <section class="section-content">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="text-4xl">🎯</span>
+                    <h2 class="text-3xl md:text-4xl font-bold">Ce que vous allez découvrir</h2>
+                </div>
+            </div>
+            
+            <p class="text-xl md:text-2xl text-center mb-12">Dans les 10 prochaines minutes, vous allez :</p>
+        </div>
+    </section>
+
+    <!-- Section 4: Benefits List -->
+    <section class="section-content">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="benefits-container mx-auto">
+                <div class="benefit-item">
+                    <span class="benefit-icon">✨</span>
+                    <span class="benefit-text">Évacuer instantanément vos pensées parasites</span>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">💡</span>
+                    <span class="benefit-text">Débloquer votre créativité naturelle</span>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">🦋</span>
+                    <span class="benefit-text">Transformer vos obstacles en opportunités</span>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">🚀</span>
+                    <span class="benefit-text">Identifier votre prochaine action clé</span>
+                </div>
+            </div>
+            
+            <p class="text-xl md:text-2xl text-center font-semibold mt-12">100% gratuit • 100% confidentiel • Résultats immédiats</p>
+        </div>
+    </section>
+
+    <!-- Section 5: How It Works -->
+    <section class="section-content">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="text-4xl">🔓</span>
+                    <h2 class="text-3xl md:text-4xl font-bold">Comment ça marche ?</h2>
+                </div>
+            </div>
+            
+            <p class="text-lg md:text-xl text-center mb-8">Vous allez répondre à 5 questions guidées dans un espace totalement privé.</p>
+            <p class="text-lg md:text-xl text-center">Nous utilisons CryptPad pour garantir que vos réponses restent anonymes et chiffrées.</p>
+        </div>
+    </section>
+
+    <!-- Section 6: Privacy & CTA -->
+    <section class="section-content pb-20">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Votre confidentialité :</h2>
+            
+            <div class="privacy-container mx-auto mb-16">
+                <div class="privacy-item">
+                    <span class="check-icon">✅</span>
+                    <span class="privacy-text">Aucune donnée personnelle demandée</span>
+                </div>
+                
+                <div class="privacy-item">
+                    <span class="check-icon">✅</span>
+                    <span class="privacy-text">Contenu invisible même pour nous</span>
+                </div>
+                
+                <div class="privacy-item">
+                    <span class="check-icon">✅</span>
+                    <span class="privacy-text">Pas d'email, pas de téléphone requis</span>
+                </div>
+                
+                <div class="privacy-item">
+                    <span class="check-icon">✅</span>
+                    <span class="privacy-text">Suppression automatique après 30 jours</span>
+                </div>
+            </div>
+            
+            <div class="text-center mb-12">
+                <a href="https://cryptpad.fr/form/#/2/form/view/tuEv8tuTOlvx+4HND82hCL68KXNt1mGAUSx+E2+tW58/" 
+                   class="cta-button"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <span>🚀</span>
+                    <span>COMMENCER MA ZENBOX</span>
+                </a>
+            </div>
+            
+            <div class="text-center">
+                <a href="/" class="back-link">Retourner à l'accueil</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-gray-700 py-12 border-t border-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold mb-6 text-purple-600">Synaptika</h3>
+                <!-- Social Media Icons -->
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="https://www.youtube.com/@synaptika" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-red-600 transition-colors">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://fr.pinterest.com/synaptikanet" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-red-700 transition-colors">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="currentColor"/>
+                            <path d="M12.017 5.5c-3.866 0-5.813 2.768-5.813 5.076 0 1.395.529 2.635 1.662 3.098.186.076.353.003.407-.203.037-.142.125-.495.164-.643.054-.2.033-.27-.115-.444-.322-.38-.527-.872-.527-1.568 0-2.02 1.512-3.83 3.938-3.83 2.147 0 3.328 1.312 3.328 3.064 0 2.305-1.02 4.25-2.535 4.25-.836 0-1.463-.692-1.262-1.54.24-1.012.706-2.104.706-2.836 0-.654-.351-1.2-1.077-1.2-.855 0-1.542.885-1.542 2.07 0 .754.255 1.264.255 1.264s-.872 3.695-1.025 4.34c-.305 1.283-.046 2.856-.024 3.015.013.094.133.116.187.046.077-.1 1.074-1.33 1.425-2.575.1-.353.572-2.235.572-2.235.283.538 1.108 1.012 1.986 1.012 2.613 0 4.388-2.382 4.388-5.57C17.56 7.548 15.528 5.5 12.017 5.5z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="https://bsky.app/profile/synaptika.bsky.social" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-500 transition-colors">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-300 pt-6">
+                <p class="text-gray-500">&copy; 2026 Synaptika. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6329db7454f06e12d895d62c/1gddo2ft4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
+

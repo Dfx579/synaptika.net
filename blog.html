@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- SEO最適化 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Blog Synaptika - IA, Innovation, Nutrition scolaire. Découvrez comment l'alimentation influence les performances et le comportement.">
+<meta name="keywords" content="IA, intelligence artificielle, nutrition, éducation, Japon, performance scolaire, innovation">
+<meta name="author" content="Synaptika">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph (SNSシェア用) -->
+<meta property="og:title" content="Blog Synaptika - Innovation et IA">
+<meta property="og:description" content="Découvrez nos articles sur l'IA, la nutrition scolaire et l'innovation.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://huggingface.co/spaces/YOUR_USERNAME/Synaptika2/blog.html">
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXGGA3JMtcl3lF0Z_FywS3SLIbkY3F21T1TUdGSBFRRPTLNnJiX5Ao4VSvQk8Gf8W1a5tMHQGN4A9D3AivhGKiV8uW4zbhQULk_tUv-yRQBmOlN62PTtATqjlgM_Eib-xON0Vf7QgY1QDej6rJv8-2oxo850HeR1bLp9HG3nVl-mkFuLFXcywtMmBJWqYV/w400-h316/Capture%20d%E2%80%99%C3%A9cran_2025-08-30_09-35-33.png">
+<meta property="og:site_name" content="Blog Synaptika">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog Synaptika">
+<meta name="twitter:description" content="IA, Innovation, Nutrition scolaire">
+<meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXGGA3JMtcl3lF0Z_FywS3SLIbkY3F21T1TUdGSBFRRPTLNnJiX5Ao4VSvQk8Gf8W1a5tMHQGN4A9D3AivhGKiV8uW4zbhQULk_tUv-yRQBmOlN62PTtATqjlgM_Eib-xON0Vf7QgY1QDej6rJv8-2oxo850HeR1bLp9HG3nVl-mkFuLFXcywtMmBJWqYV/w400-h316/Capture%20d%E2%80%99%C3%A9cran_2025-08-30_09-35-33.png">
+
+<title>Blog Synaptika - Innovation • IA • Nutrition Scolaire</title>
+<style>
+:root {
+--primary: #7f21f3; --bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+--card: #ffffff; --text: #333; --light: #666; --shadow: rgba(0,0,0,0.1);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+background: var(--bg); line-height: 1.7; color: var(--text); overflow-x: hidden;
+}
+
+/* === ナビゲーション（完全レスポンシブ） === */
+.nav {
+background: rgba(255,255,255,0.95); backdrop-filter: blur(20px);
+padding: 20px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 20px var(--shadow);
+}
+.nav-content {
+max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex;
+justify-content: space-between; align-items: center;
+}
+.nav a {
+color: var(--primary); font-weight: 700; font-size: 16px;
+text-decoration: none; padding: 10px 20px; border-radius: 25px; transition: all 0.3s;
+}
+.nav a:hover { background: var(--primary); color: white; transform: translateY(-2px); }
+
+/* === ヘッダー === */
+.header { text-align: center; padding: 60px 20px; }
+h1 {
+font-size: clamp(32px, 6vw, 52px); color: var(--primary);
+font-weight: 900; margin-bottom: 15px; letter-spacing: -1px;
+}
+.subtitle {
+font-size: clamp(16px, 3vw, 20px); color: var(--light);
+font-weight: 300; margin-bottom: 50px;
+}
+
+/* === 記事カード === */
+.posts { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.post {
+background: var(--card); margin-bottom: 40px; border-radius: 24px;
+overflow: hidden; box-shadow: 0 20px 60px var(--shadow);
+transform: translateY(30px); opacity: 0; transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.post.animate { transform: translateY(0); opacity: 1; }
+.post-header { padding: 40px 40px 20px; }
+.post-title {
+font-size: clamp(24px, 4vw, 34px); font-weight: 700; line-height: 1.3;
+color: var(--text); margin-bottom: 12px;
+}
+.post-meta {
+display: flex; gap: 25px; color: var(--light); font-size: 15px;
+margin-bottom: 25px; flex-wrap: wrap;
+}
+.post-excerpt {
+padding: 0 40px 40px; font-size: 17px; color: #555; line-height: 1.8;
+}
+.post img {
+max-width: 100%; 
+height: 300px;  /* ← この行を追加 */
+object-fit: cover;
+border-radius: 15px; margin: 25px 0;
+box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.post-footer {
+padding: 0 40px 40px; display: flex; justify-content: space-between;
+align-items: center; border-top: 1px solid #f0f0f0; margin-top: 30px;
+}
+.tags { display: flex; gap: 12px; flex-wrap: wrap; }
+.tag {
+background: rgba(127,33,243,0.1); color: var(--primary); padding: 8px 16px;
+border-radius: 20px; font-size: 13px; font-weight: 600; transition: 0.3s;
+}
+.tag:hover { background: var(--primary); color: white; }
+
+.btn-primary {
+background: linear-gradient(45deg, var(--primary), #6a1cc9); color: white;
+padding: 16px 36px; border-radius: 30px; font-weight: 700; font-size: 15px;
+text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 10px 30px rgba(127,33,243,0.4);
+transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+text-decoration: none; display: inline-block;
+}
+.btn-primary:hover {
+transform: translateY(-4px); box-shadow: 0 20px 40px rgba(127,33,243,0.5);
+text-decoration: none; color: white;
+}
+
+/* === RGPD Cookieバナー === */
+.cookie-banner {
+position: fixed; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.95);
+color: white; padding: 25px; text-align: center; z-index: 10000;
+transform: translateY(100%); transition: transform 0.4s ease-out;
+backdrop-filter: blur(15px); font-size: 15px;
+}
+.cookie-banner.show { transform: translateY(0); }
+.cookie-buttons {
+display: flex; gap: 15px; justify-content: center; margin-top: 20px;
+flex-wrap: wrap;
+}
+.cookie-btn {
+padding: 14px 28px; border: none; border-radius: 8px; font-weight: 700;
+cursor: pointer; font-size: 15px; transition: all 0.3s; min-width: 120px;
+}
+.cookie-accept { background: #28a745; color: white; }
+.cookie-decline { background: #6c757d; color: white; }
+.cookie-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+
+/* === フッター === */
+.footer {
+text-align: center; padding: 60px 20px; color: var(--light);
+background: rgba(255,255,255,0.7); backdrop-filter: blur(10px);
+margin-top: 80px;
+}
+
+/* === レスポンシブ === */
+@media (max-width: 768px) {
+.posts { padding: 0 15px; }
+.post-header, .post-excerpt, .post-footer { padding-left: 25px; padding-right: 25px; }
+.post-meta { flex-direction: column; gap: 10px; }
+.cookie-buttons { flex-direction: column; align-items: center; }
+.cookie-btn { width: 100%; max-width: 250px; }
+}
+@media (max-width: 480px) {
+h1 { font-size: 32px; }
+.nav-content { flex-direction: column; gap: 15px; }
+}
+</style>
+</head>
+<body>
+<!-- RGPD Cookie Banner -->
+<div class="cookie-banner" id="cookieBanner">
+<div>🍪 Ce site utilise des cookies pour améliorer votre expérience de navigation et analyser votre usage.
+<a href="#" style="color: #87ceeb; text-decoration: underline;">En savoir plus</a>
+</div>
+<div class="cookie-buttons">
+<button class="cookie-btn cookie-accept" onclick="acceptCookies()">✅ Accepter</button>
+<button class="cookie-btn cookie-decline" onclick="declineCookies()">❌ Refuser</button>
+</div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav">
+<div class="nav-content">
+<a href="/">← Accueil</a>
+<a href="./blog.html">Blog</a>
+</div>
+</nav>
+
+<!-- Header -->
+<div class="header">
+<h1>Blog Synaptika</h1>
+<p class="subtitle">Innovation • Intelligence Artificielle • Nutrition Scolaire</p>
+</div>
+
+<!-- Posts (動的に読み込まれる) -->
+<div class="posts" id="postsContainer">
+<!-- Les articles seront chargés ici par JavaScript -->
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+<p>© 2026 Synaptika. Tous droits réservés.</p>
+<p><a href="index.html" style="color: var(--primary);">← Retour à l'accueil</a></p>
+</footer>
+
+<!-- posts.jsを読み込む -->
+<script src="./posts.js"></script>
+
+<script>
+// 記事を動的に生成して表示
+function loadPosts() {
+const container = document.getElementById('postsContainer');
+
+console.log('🔍 Début de loadPosts()');
+console.log('📊 typeof posts:', typeof posts);
+console.log('📋 posts:', window.posts || posts);
+
+if (typeof posts === 'undefined' || !posts || posts.length === 0) {
+console.error('❌ Aucun article trouvé !');
+container.innerHTML = '<p style="text-align: center; padding: 40px; color: var(--light);">Aucun article disponible pour le moment.</p>';
+return;
+}
+
+console.log('✅ Articles trouvés:', posts.length);
+  
+posts.forEach((post, index) => {
+const article = document.createElement('article');
+article.className = 'post';
+    
+article.innerHTML = `
+<div class="post-header">
+<h2 class="post-title">${post.title || 'Sans titre'}</h2>
+<div class="post-meta">
+${post.date ? `<span>📅 ${post.date}</span>` : ''}
+${post.author ? `<span>👤 ${post.author}</span>` : ''}
+${post.reads ? `<span>⭐ ${post.reads} lectures</span>` : ''}
+</div>
+</div>
+<div class="post-excerpt">
+${post.image ? `<img src="${post.image}" alt="${post.title}">` : ''}
+${post.excerpt ? `<p>${post.excerpt}</p>` : ''}
+</div>
+<div class="post-footer">
+<div class="tags">
+${post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join('') : ''}
+</div>
+<a href="${post.file}" class="btn-primary">Lire la suite →</a>
+</div>
+`;
+    
+container.appendChild(article);
+});
+  
+// アニメーション適用
+setTimeout(() => {
+const observer = new IntersectionObserver((entries) => {
+entries.forEach((entry, index) => {
+if (entry.isIntersecting) {
+setTimeout(() => entry.target.classList.add('animate'), index * 150);
+}
+});
+});
+document.querySelectorAll('.post').forEach(post => observer.observe(post));
+}, 100);
+}
+
+// RGPD Cookie（セーフ実装）
+function initCookies() {
+if (!localStorage.getItem('cookiesAccepted')) {
+setTimeout(() => {
+document.getElementById('cookieBanner').classList.add('show');
+}, 2000);
+}
+}
+
+function acceptCookies() {
+localStorage.setItem('cookiesAccepted', 'true');
+document.getElementById('cookieBanner').classList.remove('show');
+}
+
+function declineCookies() {
+localStorage.setItem('cookiesAccepted', 'false');
+document.getElementById('cookieBanner').classList.remove('show');
+}
+
+// ページ読み込み完了後実行
+if (document.readyState === 'loading') {
+document.addEventListener('DOMContentLoaded', () => {
+loadPosts();
+initCookies();
+});
+} else {
+loadPosts();
+initCookies();
+}
+</script>
+</body>
+</html>

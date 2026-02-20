@@ -1,0 +1,1 @@
+console.log("Synaptika OK");

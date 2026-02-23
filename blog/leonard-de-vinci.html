@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- SEO最適化 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez comment la curiosité insatiable de Léonard de Vinci stimule l'innovation et comment ses habitudes peuvent inspirer votre développement personnel et cérébral.">
+    <meta name="keywords" content="Léonard de Vinci, curiosité, innovation, cerveau, neuroplasticité, créativité, développement personnel, bien-être">
+    <title>Léonard de Vinci : Comment la curiosité stimule l'innovation - Blog Synaptika</title>
+    <style>
+        :root {
+            --primary: #7f21f3; --bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --card: #ffffff; --text: #333; --light: #666; --shadow: rgba(0,0,0,0.1);
+            --blue: #0b5394;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: var(--bg); line-height: 1.7; color: var(--text); overflow-x: hidden;
+        }
+        
+        /* === Navigation === */
+        .nav { 
+            background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); 
+            padding: 20px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 20px var(--shadow);
+        }
+        .nav-content { 
+            max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; 
+            justify-content: space-between; align-items: center;
+        }
+        .nav a { 
+            color: var(--primary); font-weight: 700; font-size: 16px; 
+            text-decoration: none; padding: 10px 20px; border-radius: 25px; transition: all 0.3s;
+        }
+        .nav a:hover { background: var(--primary); color: white; transform: translateY(-2px); }
+        
+        /* === Header === */
+        .header { 
+            text-align: center; padding: 80px 20px 60px; background: rgba(255,255,255,0.8); 
+            backdrop-filter: blur(10px); margin-bottom: 40px;
+        }
+        .header h1 { 
+            font-size: clamp(28px, 5vw, 42px); color: var(--text); 
+            font-weight: 900; margin-bottom: 15px; line-height: 1.2;
+        }
+        .header-meta { 
+            color: var(--light); font-size: 16px; display: flex; 
+            justify-content: center; gap: 25px; flex-wrap: wrap; margin-top: 20px;
+        }
+        .reading-time { color: var(--light); font-size: 16px; }
+        
+        /* === Contenu article === */
+        .article { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        .article img { 
+            max-width: 50%; height: auto; border-radius: 15px; margin: 30px 0; 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1); display: block; margin-left: auto; margin-right: auto;
+        }
+        .warning { 
+            background: rgba(11,83,148,0.1); border-left: 5px solid var(--blue); 
+            padding: 25px; margin: 40px 0; border-radius: 8px; color: var(--blue);
+            font-size: 16px;
+        }
+        .toc { 
+            background: rgba(127,33,243,0.05); padding: 30px; margin: 40px 0; 
+            border-radius: 12px; border-left: 4px solid var(--primary);
+        }
+        .toc h2 { color: var(--blue); font-size: 28px; margin-bottom: 20px; font-weight: bold; }
+        .toc ul { list-style: none; padding-left: 0; }
+        .toc li { margin: 15px 0; font-size: 18px; }
+        .toc li a { color: var(--blue); text-decoration: none; }
+        .toc li a:hover { text-decoration: underline; }
+        
+        .section-title { 
+            color: var(--blue); font-size: 30px; font-weight: bold; 
+            margin: 50px 0 25px; border-bottom: 3px solid var(--blue); padding-bottom: 10px;
+        }
+        .subsection-title { 
+            color: var(--blue); font-size: 24px; font-weight: bold; 
+            margin: 35px 0 20px;
+        }
+        p { font-size: 18px; margin-bottom: 22px; }
+        .highlight { font-weight: bold; }
+
+        /* Listes parfaitement alignées */
+        .method-list {
+            padding: 0 !important;
+            margin: 0 !important;
+            list-style: none;
+        }
+        .method-list li {
+            font-size: 18px;
+            margin-bottom: 25px;
+            padding-left: 2.2em;
+            position: relative;
+            line-height: 1.5;
+        }
+        .method-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333 !important;
+            font-weight: normal;
+            font-size: 1.1em;
+        }
+        
+        /* === Citation / Mise en avant === */
+        .quote-block {
+            font-size: 20px; text-align: center; font-weight: bold; color: var(--blue);
+            padding: 30px; background: rgba(127,33,243,0.05); border-radius: 12px; margin: 40px 0;
+        }
+        .quote-gold {
+            font-size: 20px; text-align: center; font-weight: bold; color: #7f5a00;
+            padding: 30px; background: rgba(255,215,0,0.1); border-radius: 12px; margin: 40px 0;
+            border-left: 4px solid #c9a227;
+        }
+        
+        /* === CTA === */
+        .cta-section { 
+            background: linear-gradient(135deg, var(--primary), #6a1cc9); 
+            color: white; text-align: center; padding: 60px 30px; 
+            margin: 80px 0; border-radius: 20px; box-shadow: 0 20px 60px rgba(127,33,243,0.3);
+        }
+        .cta-section h3 { font-size: 28px; margin-bottom: 20px; }
+        .btn-primary { 
+            background: white; color: var(--primary); padding: 18px 40px; 
+            border-radius: 30px; font-weight: 700; font-size: 16px; 
+            text-decoration: none; display: inline-block; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.4s;
+        }
+        .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        
+        /* === Tags === */
+        .tags { margin: 40px 0 20px; }
+        .tag { 
+            display: inline-block; background: rgba(127,33,243,0.1); color: var(--primary);
+            padding: 6px 16px; border-radius: 20px; font-size: 15px; margin: 5px 5px 5px 0;
+            font-weight: 600;
+        }
+
+        /* === Footer === */
+        .footer { 
+            text-align: center; padding: 60px 20px; color: var(--light); 
+            background: rgba(255,255,255,0.7); backdrop-filter: blur(10px);
+            margin-top: 80px;
+        }
+        
+        /* === Responsive === */
+        @media (max-width: 768px) {
+            .header-meta { flex-direction: column; gap: 10px; }
+            .section-title, .toc h2 { font-size: 24px; }
+            p, .toc li { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="/">← Accueil</a>
+            <a href="../blog.html">Blog</a>
+        </div>
+    </nav>
+    
+    <!-- Header -->
+    <div class="header">
+        <h1>Léonard de Vinci</h1>
+        <p style="color: var(--light); font-size: 18px; margin-bottom: 20px;">Comment la curiosité stimule l'innovation</p>
+        <div class="header-meta">
+            <span class="reading-time">⏱️ Temps de lecture : 5 minutes</span>
+        </div>
+    </div>
+    
+    <!-- Article Content -->
+    <div class="article">
+
+        <!-- Image principale -->
+        <img src="./image/leonard-de-vinci.gif" alt="Léonard de Vinci - Comment la curiosité stimule l'innovation">
+
+        <!-- Introduction -->
+        <p>Votre cerveau est un organe incroyablement flexible et complexe, surpassant même les ordinateurs les plus sophistiqués.</p>
+        <p>En le nourrissant correctement et en lui offrant un environnement sain, vous pouvez améliorer significativement vos capacités cérébrales.</p>
+        <p>Plutôt que de vous laisser emporter par la malbouffe et les médias, optez pour une alimentation riche en nutriments qui favorisent la neuroplasticité, tout en pratiquant une activité physique régulière pour stimuler votre cerveau.</p>
+        <p>L'image d'un jardin luxuriant illustre bien les besoins de votre cerveau : eau, soleil, et un sol fertile, tout comme il a besoin de bonnes graisses, antioxydants et vitamines.</p>
+
+        <!-- Section cerveau vs ordinateur -->
+        <h2 class="section-title">Votre cerveau surpasse les ordinateurs</h2>
+
+        <p>Il faut <strong>40 minutes</strong> à un superordinateur pour simuler une seule seconde d'activité cérébrale.</p>
+
+        <img src="./image/memoire-cerveau.png" alt="La mémoire de votre cerveau surpasse les ordinateurs" style="max-width: 60%;">
+
+        <p>La mémoire de votre cerveau, flexible et liée à des associations, surpasse les ordinateurs avec leurs emplacements de stockage fixes en termes de créativité et d'adaptabilité.</p>
+
+        <p>Vos capacités cérébrales peuvent s'améliorer de manière significative si vous les utilisez correctement... et surtout en leur offrant des conditions <strong>SAINES</strong>.</p>
+
+        <p>Vous pouvez toujours vous goinfrer de fast-food et rester hypnotisé par les médias ou bien...</p>
+        <p>Vous pouvez choisir de nourrir votre esprit et votre corps avec des aliments riches en nutriments, qui soutiennent la neuroplasticité, favorisant une meilleure concentration et une mémoire améliorée.</p>
+
+        <!-- Section jardin -->
+        <h2 class="section-title">Imaginez votre cerveau comme un jardin luxuriant</h2>
+
+        <img src="./image/jardin-luxuriant.gif" alt="Un jardin luxuriant" style="max-width: 60%;">
+
+        <p>Il a besoin d'eau, de soleil et d'un sol fertile tout comme il a besoin de bonnes graisses, d'antioxydants et de vitamines.</p>
+        <p>L'exercice physique, bien au-delà des casse-têtes, est crucial pour la santé cérébrale, augmentant même la taille de certaines parties du cerveau liées à la mémoire et à l'apprentissage.</p>
+
+        <img src="./image/exercice-memoire.gif" alt="L'exercice physique augmente la mémoire et l'apprentissage" style="max-width: 50%;">
+
+        <!-- Section s'améliorer -->
+        <h2 class="section-title">S'améliorer pour s'épanouir</h2>
+
+        <p>En plus d'une alimentation équilibrée et de l'exercice, des éléments comme un sommeil adéquat, la réduction du stress, l'amélioration de l'attention, le partage d'émotions, et l'augmentation de la matière grise dans différentes régions cérébrales sont essentiels pour un cerveau en pleine forme.</p>
+        <p>Prendre soin de votre cerveau est primordial, car il orchestre chaque aspect de votre vie.</p>
+
+        <p>La science tend à valider que l'activité physique régulière peut augmenter la taille de l'hippocampe, la partie du cerveau impliquée dans la mémoire verbale et l'apprentissage.</p>
+
+        <p style="font-size: 20px; font-weight: bold; margin: 30px 0;">Alors...</p>
+        <p>Bougez, dansez, marchez, ou pratiquez votre sport favori et observez comment votre agilité mentale peut s'affiner.</p>
+
+        <p>Il y a beaucoup à dire entre :</p>
+        <ul class="method-list" style="margin: 20px 0 30px !important;">
+            <li>un sommeil adéquat,</li>
+            <li>réduire le stress,</li>
+            <li>améliorer votre attention,</li>
+            <li>partager des émotions,</li>
+            <li>augmenter la matière grise dans diverses régions cérébrales et ce n'est que le début.</li>
+        </ul>
+
+        <p>Désolé, mais m'étendre davantage serait le sujet d'un autre article.</p>
+        <p>Mais retenons que votre cerveau orchestre chaque instant de votre vie, donc il est primordial de prendre soin de lui en adoptant des habitudes saines qui stimulent votre esprit tout en restant actif physiquement et mentalement.</p>
+
+        <!-- Citation or -->
+        <div class="quote-gold">
+            Dans l'ère de l'information, votre attention vaut plus que de l'Or.
+        </div>
+
+        <p style="text-align: center; font-size: 18px;">Ne le sous-estimez pas, vous êtes le seul gardien de vos pensées... et de votre attention !</p>
+
+        <!-- Section Léonard de Vinci -->
+        <h2 class="section-title">Le goût de la découverte</h2>
+
+        <img src="./image/leonard-decouverte.png" alt="Le goût de la découverte de Léonard de Vinci" style="max-width: 60%;">
+
+        <p>Dans cet article, je vais tenter de vous transmettre les curieuses habitudes d'un personnage très connu.</p>
+        <p>Il a été le premier à dessiner le moulage du cerveau et les ventricules du cœur, il est aussi le pionnier de la botanique moderne qui a écrit sur les phénomènes d'attraction des plantes vers le soleil, la disposition des feuilles chez les plantes et beaucoup d'autres découvertes scientifiques majeures.</p>
+
+        <p>Léonard de Vinci, célèbre pour sa curiosité insatiable, a laissé un héritage scientifique majeur, allant de la cartographie du cerveau aux découvertes en botanique.</p>
+        <p>Sa pratique du jeûne auditif, écoutant le silence et appréciant la musique des sphères, illustre son approche zen.</p>
+        <p>Prendre le temps d'écouter réellement les autres et de communiquer profondément peut enrichir vos relations.</p>
+
+        <p>Enfin, en vous exerçant à écouter activement les sons qui vous entourent, à visualiser positivement, et à clarifier vos désirs, vous pouvez créer un environnement interne riche qui stimule vos sens.</p>
+
+        <!-- Citation cerveau -->
+        <div class="quote-block">
+            Votre cerveau ne fait pas la différence entre le réel et l'imaginaire.
+        </div>
+
+        <p>Alors cultivez des pensées et des expériences positives pour nourrir votre esprit et votre bien-être.</p>
+
+        <!-- CTA fiche pratique -->
+        <p style="font-size: 18px; font-weight: bold; margin: 40px 0 20px;">Pour approfondir, téléchargez votre fiche pratique :</p>
+
+        <!-- Icône téléchargement PDF -->
+        <div style="text-align: center; margin: 20px 0 30px;">
+    <a href="https://signature-de-genie.netlify.app/" target="_blank" style="display: inline-block; text-decoration: none;">
+        <img src="./image/icon-telechargement.png" alt="Télécharger la fiche pratique" style="width: 250px; height: 250px; object-fit: contain;">
+    </a>
+</div>
+
+        <!-- Vidéo YouTube - La Sieste de Léonard de Vinci -->
+        <div style="text-align: center; margin: 10px 0 50px;">
+            <a href="https://youtu.be/awiJADZZwaI" target="_blank" style="display: inline-block; text-decoration: none; position: relative;">
+                <div style="position: relative; display: inline-block; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                    <img src="./image/sieste-de-vinci.png" alt="La Sieste de Léonard De Vinci - Éveillez votre génie créatif par la relaxation" style="max-width: 320px; width: 100%; margin: 0; border-radius: 8px; display: block; box-shadow: none;">
+                    <!-- Bouton play YouTube -->
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 42px; background: #ff0000; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 0; height: 0; border-top: 11px solid transparent; border-bottom: 11px solid transparent; border-left: 20px solid white; margin-left: 4px;"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Tags -->
+        <div class="tags">
+            <span class="tag">#éducation</span>
+            <span class="tag">#inspiration</span>
+            <span class="tag">#créativité</span>
+            <span class="tag">#histoire</span>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="warning">
+            <strong>Avertissement important :</strong><br>
+            Les techniques et services qui sont proposés ne sont en aucune façon (directement ou indirectement) un diagnostic ou une prescription pour une quelconque maladie, pour qui que ce soit. Les soins et traitements médicaux ne sont en aucun cas allégés ou stoppés.
+            Les prestations ne se substituent en aucun cas à des traitements médicaux. Il est possible que le consultant puisse être réorienté vers un médecin spécialiste si nécessaire.
+        </div>
+
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Synaptika. Tous droits réservés.</p>
+        <p><a href="../blog.html" style="color: var(--primary);">← Retour au blog</a> | <a href="/" style="color: var(--primary);">Accueil</a></p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

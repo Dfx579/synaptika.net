@@ -20,9 +20,21 @@
   </url>
   <url>
     <loc>https://synaptika.net/blog.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://synaptika.net/blog/arbres.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://synaptika.net/blog/leonard-de-vinci.html</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://synaptika.net/comment-pourquoi.html</loc>
@@ -133,5 +145,4 @@
     <priority>0.7</priority>
   </url>
 </urlset>
-
 

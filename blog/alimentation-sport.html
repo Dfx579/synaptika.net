@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez comment l'alimentation saine et le sport forment un duo dynamique pour une santé de fer, une meilleure forme physique et un bien-être global.">
+    <meta name="keywords" content="alimentation saine, sport, santé, nutrition, bien-être, exercice, équilibre, forme physique, endorphines, longévité">
+    <title>L'Alimentation saine et le sport : le duo dynamique pour une santé de fer - Blog Synaptika</title>
+    <style>
+        :root {
+            --primary: #7f21f3; --bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --card: #ffffff; --text: #333; --light: #666; --shadow: rgba(0,0,0,0.1);
+            --blue: #0b5394;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: var(--bg); line-height: 1.7; color: var(--text); overflow-x: hidden;
+        }
+        
+        /* === Navigation === */
+        .nav { 
+            background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); 
+            padding: 20px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 20px var(--shadow);
+        }
+        .nav-content { 
+            max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; 
+            justify-content: space-between; align-items: center;
+        }
+        .nav a { 
+            color: var(--primary); font-weight: 700; font-size: 16px; 
+            text-decoration: none; padding: 10px 20px; border-radius: 25px; transition: all 0.3s;
+        }
+        .nav a:hover { background: var(--primary); color: white; transform: translateY(-2px); }
+        
+        /* === Header === */
+        .header { 
+            text-align: center; padding: 80px 20px 60px; background: rgba(255,255,255,0.8); 
+            backdrop-filter: blur(10px); margin-bottom: 40px;
+        }
+        .header h1 { 
+            font-size: clamp(28px, 5vw, 42px); color: var(--text); 
+            font-weight: 900; margin-bottom: 15px; line-height: 1.2;
+        }
+        .header-meta { 
+            color: var(--light); font-size: 16px; display: flex; 
+            justify-content: center; gap: 25px; flex-wrap: wrap; margin-top: 20px;
+        }
+        .reading-time { color: var(--light); font-size: 16px; }
+        
+        /* === Contenu article === */
+        .article { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        .article img { 
+            max-width: 50%; height: auto; border-radius: 15px; margin: 30px 0; 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1); display: block; margin-left: auto; margin-right: auto;
+        }
+        .warning { 
+            background: rgba(11,83,148,0.1); border-left: 5px solid var(--blue); 
+            padding: 25px; margin: 40px 0; border-radius: 8px; color: var(--blue);
+            font-size: 16px; max-width: 900px; margin-left: auto; margin-right: auto;
+            box-sizing: border-box;
+        }
+        .toc { 
+            background: rgba(127,33,243,0.05); padding: 30px; margin: 40px 0; 
+            border-radius: 12px; border-left: 4px solid var(--primary);
+        }
+        .toc h2 { color: var(--blue); font-size: 28px; margin-bottom: 20px; font-weight: bold; }
+        .toc ul { list-style: none; padding-left: 0; }
+        .toc li { margin: 15px 0; font-size: 18px; }
+        .toc li a { color: var(--blue); text-decoration: none; }
+        .toc li a:hover { text-decoration: underline; }
+        
+        .section-title { 
+            color: var(--blue); font-size: 30px; font-weight: bold; 
+            margin: 50px 0 25px; border-bottom: 3px solid var(--blue); padding-bottom: 10px;
+        }
+        .subsection-title { 
+            color: var(--blue); font-size: 24px; font-weight: bold; 
+            margin: 35px 0 20px;
+        }
+        p { font-size: 18px; margin-bottom: 22px; }
+        .highlight { font-weight: bold; }
+
+        /* Listes parfaitement alignées */
+        .method-list {
+            padding: 0 !important;
+            margin: 0 !important;
+            list-style: none;
+        }
+        .method-list li {
+            font-size: 18px;
+            margin-bottom: 25px;
+            padding-left: 2.2em;
+            position: relative;
+            line-height: 1.5;
+        }
+        .method-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333 !important;
+            font-weight: normal;
+            font-size: 1.1em;
+        }
+        
+        /* === Citation / Mise en avant === */
+        .quote-block {
+            font-size: 20px; text-align: center; font-weight: bold; color: var(--blue);
+            padding: 30px; background: rgba(127,33,243,0.05); border-radius: 12px; margin: 40px 0;
+        }
+        .quote-gold {
+            font-size: 20px; text-align: center; font-weight: bold; color: #7f5a00;
+            padding: 30px; background: rgba(255,215,0,0.1); border-radius: 12px; margin: 40px 0;
+            border-left: 4px solid #c9a227;
+        }
+        
+        /* === CTA === */
+        .cta-section { 
+            background: linear-gradient(135deg, var(--primary), #6a1cc9); 
+            color: white; text-align: center; padding: 60px 30px; 
+            margin: 80px 0; border-radius: 20px; box-shadow: 0 20px 60px rgba(127,33,243,0.3);
+        }
+        .cta-section h3 { font-size: 28px; margin-bottom: 20px; }
+        .btn-primary { 
+            background: white; color: var(--primary); padding: 18px 40px; 
+            border-radius: 30px; font-weight: 700; font-size: 16px; 
+            text-decoration: none; display: inline-block; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.4s;
+        }
+        .btn-primary:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        
+        /* === Tags === */
+        .tags { margin: 40px auto 20px; max-width: 900px; padding: 0 20px; }
+        .tag { 
+            display: inline-block; background: rgba(127,33,243,0.1); color: var(--primary);
+            padding: 6px 16px; border-radius: 20px; font-size: 15px; margin: 5px 5px 5px 0;
+            font-weight: 600;
+        }
+
+        /* === Footer === */
+        .footer { 
+            text-align: center; padding: 60px 20px; color: var(--light); 
+            background: rgba(255,255,255,0.7); backdrop-filter: blur(10px);
+            margin-top: 80px;
+        }
+        
+        /* === Responsive === */
+        @media (max-width: 768px) {
+            .header-meta { flex-direction: column; gap: 10px; }
+            .section-title, .toc h2 { font-size: 24px; }
+            p, .toc li { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="/">← Accueil</a>
+            <a href="../blog.html">Blog</a>
+        </div>
+    </nav>
+    
+    <!-- Header -->
+    <div class="header">
+        <h1>L'Alimentation saine et le sport</h1>
+        <p style="color: var(--light); font-size: 18px; margin-bottom: 20px;">Le duo dynamique pour une santé de fer</p>
+        <div class="header-meta">
+            <span class="reading-time">⏱️ Temps de lecture : 5 minutes</span>
+        </div>
+    </div>
+    
+    <!-- Article Content -->
+    <div class="article">
+
+        <!-- Image principale -->
+        <img src="./image/alimentation-sport.gif" alt="L'alimentation saine et le sport - duo dynamique pour une santé de fer">
+
+        <!-- Introduction -->
+        <p>L'adoption d'une alimentation saine combinée à une pratique régulière du sport constitue un pilier fondamental pour le maintien d'une bonne santé et le bien-être général.</p>
+        <p>Ce duo gagnant offre une synergie de bienfaits qui se renforcent mutuellement, permettant d'atteindre un niveau optimal de forme physique et mentale.</p>
+
+        <!-- Section nutrition -->
+        <h2 class="section-title">Nutrition équilibrée : la fondation d'une santé durable</h2>
+
+        <img src="./image/sport-alimentation.png" alt="Nutrition équilibrée - alimentation saine" style="max-width: 60%;">
+
+        <p>Une alimentation riche en nutriments essentiels — vitamines, minéraux, protéines, bonnes graisses et fibres — est cruciale pour le bon fonctionnement de l'organisme.</p>
+        <p>Elle fournit l'énergie nécessaire pour les activités quotidiennes et soutient les processus métaboliques vitaux.</p>
+        <p>Les aliments non transformés, comme les fruits, les légumes, les céréales complètes et les protéines de qualité, sont la clé d'une <strong>alimentation équilibrée</strong>.</p>
+
+        <!-- Section activité physique -->
+        <h2 class="section-title">L'Activité physique : le moteur du bien-être</h2>
+
+        <img src="./image/fruits-legumes.png" alt="Activité physique et sport pour le bien-être" style="max-width: 60%;">
+
+        <p>Le sport, quant à lui, est reconnu pour ses effets positifs sur la santé cardio-vasculaire, le maintien de la masse musculaire, la gestion du poids et l'amélioration de la souplesse et de la coordination.</p>
+        <p>L'exercice physique régulier est également un excellent moyen de <strong>réduire le stress</strong> et de libérer des endorphines, les hormones du bonheur, favorisant ainsi une humeur positive.</p>
+
+        <!-- Section bienfaits combinés -->
+        <h2 class="section-title">Les bienfaits combinés de l'alimentation et du sport</h2>
+
+        <img src="./image/femme-sportive.png" alt="Les bienfaits combinés de l'alimentation et du sport" style="max-width: 60%;">
+
+        <ul class="method-list" style="margin: 20px 0 30px !important;">
+            <li><strong>Poids corporel sain :</strong> Une alimentation équilibrée contrôle l'apport calorique, tandis que le sport augmente la dépense énergétique, facilitant la gestion du poids et la réduction du tissu adipeux.</li>
+            <li><strong>Prévention des maladies :</strong> Ce tandem diminue le risque de développer des maladies chroniques telles que les maladies cardiaques, le diabète de type 2, l'hypertension et certains cancers.</li>
+            <li><strong>Amélioration de la performance physique :</strong> Une nutrition adéquate assure un apport suffisant en macro et micronutriments essentiels pour optimiser la performance sportive et accélérer la récupération.</li>
+            <li><strong>Santé mentale et cognitive :</strong> L'exercice et une bonne alimentation sont associés à une meilleure santé mentale, une réduction des symptômes de dépression et d'anxiété, et une amélioration des fonctions cognitives.</li>
+            <li><strong>Longévité et qualité de vie :</strong> La combinaison d'une alimentation saine et du sport contribue à une meilleure qualité de vie et à un vieillissement en santé.</li>
+        </ul>
+
+        <!-- Citation -->
+        <div class="quote-block">
+            Votre corps est le reflet de ce que vous mangez et de ce que vous faites — nourrissez-le, bougez-le, et il vous le rendra.
+        </div>
+
+        <p>En somme, adopter une alimentation saine tout en pratiquant régulièrement du sport est une stratégie gagnante pour une vie équilibrée et énergique.</p>
+
+        <!-- Citation or -->
+        <div class="quote-gold">
+            Ce duo est votre allié pour un corps tonique, un esprit vif et un bien-être global qui rayonne au quotidien.
+        </div>
+
+        <p style="font-size: 20px; font-weight: bold; margin: 30px 0;">Soyez le premier à laisser un commentaire.</p>
+
+        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Tags -->
+        <div class="tags">
+            <span class="tag">#nutrition</span>
+            <span class="tag">#santé</span>
+            <span class="tag">#alimentation</span>
+            <span class="tag">#hydratation</span>
+           
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="warning">
+            <strong>Avertissement important :</strong><br>
+            Les techniques et services qui sont proposés ne sont en aucune façon (directement ou indirectement) un diagnostic ou une prescription pour une quelconque maladie, pour qui que ce soit. Les soins et traitements médicaux ne sont en aucun cas allégés ou stoppés.
+            Les prestations ne se substituent en aucun cas à des traitements médicaux. Il est possible que le consultant puisse être réorienté vers un médecin spécialiste si nécessaire.
+        </div>
+
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Synaptika. Tous droits réservés.</p>
+        <p><a href="../blog.html" style="color: var(--primary);">← Retour au blog</a> | <a href="/" style="color: var(--primary);">Accueil</a></p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

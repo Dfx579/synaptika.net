@@ -139,7 +139,20 @@ const posts = [
     reads: "",
     image: "./images/leonard-de-vinci.gif",
     tags: ["Histoire", "Développement personnel"]
+  },
+  {
+    title: "Trouvez la sérénité en méditant avec les arbres",
+    file: "./blog/arbres",
+    excerpt: "Le secret ancestral de leur pouvoir apaisant",
+    date: "",
+    author: "",
+    reads: "",
+    image: "./blog/image/meditation-arbres.png",
+    tags: ["Techniques", "Énergie"]
   }
+  ];
+
+console.log("posts.js chargé avec succès !", posts.length, "articles");
 ];
 
 console.log("posts.js chargé avec succès !", posts.length, "articles");

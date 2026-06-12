@@ -180,6 +180,16 @@ const posts = [
     image: "./blog/image/revolution-cantine-japon.png",
     tags: ["Santé", "Nutrition", "Alimentation"]
   }
+,{
+    title: "Igname, Manioc, Patate Douce : Ce que Votre Grand-Mère Savait Déjà",
+    file: "./blog/igname-manioc-patate-douce",
+    excerpt: "Votre grand-mère n'avait pas de diplôme en nutrition. Elle avait un jardin.",
+    date: "2026-06-11",
+    author: "Thierry FELICIA",
+    reads: "8 min",
+    image: "./blog/images/igname-manioc-patate-douce.jpg",
+    tags: ["Nutrition", "Bien-être", "CuisineAntillaise", "AntiStress"]
+  }
 ];
 
 console.log("posts.js chargé avec succès !", posts.length, "articles");

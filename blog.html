@@ -355,8 +355,8 @@ ${post.reads ? `<span>⭐ ${post.reads} lectures</span>` : ''}
 </div>
 <div class="post-excerpt">
 ${post.image ? (post.image.toLowerCase().endsWith('.mp4') ? 
-  `<video autoplay loop muted playsinline aria-label="${post.title}"><source src="https://6a282a830373951d45cde7d3--synaptika.netlify.app/${post.image}" type="video/mp4">Votre navigateur ne supporte pas la vidéo.</video>` : 
-  `<img src="https://6a282a830373951d45cde7d3--synaptika.netlify.app/${post.image}" alt="${post.title}">`
+  `<video autoplay loop muted playsinline aria-label="${post.title}"><source src="${post.image}" type="video/mp4">Votre navigateur ne supporte pas la vidéo.</video>` : 
+  `<img src="${post.image}" alt="${post.title}">`
 ) : ''}
 ${post.excerpt ? `<p>${post.excerpt}</p>` : ''}
 </div>

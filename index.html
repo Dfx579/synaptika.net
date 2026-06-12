@@ -303,7 +303,7 @@
             
             const postUrl = post.file ? post.file + '.html' : '#';
             postCard.innerHTML = `
-                <img src="https://6a282a830373951d45cde7d3--synaptika.netlify.app/${post.image}" alt="${post.title}" class="w-full h-48 object-cover">
+                <img src="${post.image}" alt="${post.title}" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold text-gray-800 mb-2">${post.title}</h3>
                     <p class="text-gray-600 mb-4">${post.excerpt}</p>

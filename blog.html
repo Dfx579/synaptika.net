@@ -3,27 +3,43 @@
 <head>
 <!-- SEO最適化 -->
 <meta charset="UTF-8">
+<!-- Google Tag Manager — chargé uniquement après consentement CNIL -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function loadGTM() {
+    if (window._gtmLoaded) return;
+    window._gtmLoaded = true;
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZXHJFPV');
+  }
+  // Si déjà accepté lors d'une visite précédente, charger GTM immédiatement
+  if (localStorage.getItem('cookiesAccepted') === 'true') { loadGTM(); }
+</script>
+<!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Blog Synaptika - IA, Innovation, Nutrition scolaire. Découvrez comment l'alimentation influence les performances et le comportement.">
-<meta name="keywords" content="IA, intelligence artificielle, nutrition, éducation, Japon, performance scolaire, innovation">
+<meta name="description" content="Articles pratiques sur le bien-être holistique, la gestion du stress et le développement personnel en Martinique. NST Bowen, Tai Ji, nutrition — nouvelles ressources chaque semaine.">
+<meta name="keywords" content="développement personnel Martinique, bien-être holistique, NST Bowen, Tai Ji Chuan, Qi Gong, gestion du stress, santé naturelle, résilience, transformation personnelle">
 <meta name="author" content="Synaptika">
 <meta name="robots" content="index, follow">
 
 <!-- Open Graph (SNSシェア用) -->
-<meta property="og:title" content="Blog Synaptika - Innovation et IA">
-<meta property="og:description" content="Découvrez nos articles sur l'IA, la nutrition scolaire et l'innovation.">
+<meta property="og:title" content="Blog Synaptika - Bien-être & Développement personnel">
+<meta property="og:description" content="Découvrez nos articles sur le bien-être holistique, la gestion du stress, le développement personnel et la santé naturelle en Martinique.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://huggingface.co/spaces/YOUR_USERNAME/Synaptika2/blog.html">
+<meta property="og:url" content="https://synaptika.net/blog">
 <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXGGA3JMtcl3lF0Z_FywS3SLIbkY3F21T1TUdGSBFRRPTLNnJiX5Ao4VSvQk8Gf8W1a5tMHQGN4A9D3AivhGKiV8uW4zbhQULk_tUv-yRQBmOlN62PTtATqjlgM_Eib-xON0Vf7QgY1QDej6rJv8-2oxo850HeR1bLp9HG3nVl-mkFuLFXcywtMmBJWqYV/w400-h316/Capture%20d%E2%80%99%C3%A9cran_2025-08-30_09-35-33.png">
 <meta property="og:site_name" content="Blog Synaptika">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Blog Synaptika">
-<meta name="twitter:description" content="IA, Innovation, Nutrition scolaire">
+<meta name="twitter:description" content="Bien-être holistique, gestion du stress, développement personnel et santé naturelle">
 <meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXGGA3JMtcl3lF0Z_FywS3SLIbkY3F21T1TUdGSBFRRPTLNnJiX5Ao4VSvQk8Gf8W1a5tMHQGN4A9D3AivhGKiV8uW4zbhQULk_tUv-yRQBmOlN62PTtATqjlgM_Eib-xON0Vf7QgY1QDej6rJv8-2oxo850HeR1bLp9HG3nVl-mkFuLFXcywtMmBJWqYV/w400-h316/Capture%20d%E2%80%99%C3%A9cran_2025-08-30_09-35-33.png">
 
-<title>Blog Synaptika - Innovation • IA • Nutrition Scolaire</title>
+<title>Blog Synaptika - Bien-être • Développement personnel • Santé naturelle</title>
 <style>
 :root {
 --primary: #7f21f3; --bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -51,14 +67,62 @@ text-decoration: none; padding: 10px 20px; border-radius: 25px; transition: all 
 .nav a:hover { background: var(--primary); color: white; transform: translateY(-2px); }
 
 /* === ヘッダー === */
-.header { text-align: center; padding: 60px 20px; }
+.header { text-align: center; padding: 60px 20px 30px; }
 h1 {
 font-size: clamp(32px, 6vw, 52px); color: var(--primary);
 font-weight: 900; margin-bottom: 15px; letter-spacing: -1px;
 }
 .subtitle {
 font-size: clamp(16px, 3vw, 20px); color: var(--light);
-font-weight: 300; margin-bottom: 50px;
+font-weight: 300; margin-bottom: 40px;
+}
+
+/* === カテゴリーフィルター === */
+.category-filter {
+max-width: 1000px; margin: 0 auto 50px; padding: 0 20px;
+text-align: center;
+}
+.category-filter-label {
+font-size: 14px; color: var(--light); font-weight: 600;
+text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px;
+}
+.cat-buttons {
+display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+}
+.cat-btn {
+background: rgba(127,33,243,0.08); color: var(--primary);
+border: 2px solid rgba(127,33,243,0.2); padding: 10px 20px;
+border-radius: 30px; font-size: 14px; font-weight: 600;
+cursor: pointer; transition: all 0.3s; white-space: nowrap;
+}
+.cat-btn:hover {
+background: rgba(127,33,243,0.15); border-color: var(--primary);
+transform: translateY(-2px);
+}
+.cat-btn.active {
+background: var(--primary); color: white;
+border-color: var(--primary); box-shadow: 0 6px 20px rgba(127,33,243,0.35);
+transform: translateY(-2px);
+}
+.cat-btn .count {
+display: inline-block; background: rgba(255,255,255,0.3);
+border-radius: 10px; padding: 1px 7px; font-size: 12px;
+margin-left: 6px; font-weight: 700;
+}
+.cat-btn.active .count { background: rgba(255,255,255,0.3); }
+.cat-btn:not(.active) .count { background: rgba(127,33,243,0.15); }
+
+/* カテゴリーバッジ（記事カード内） */
+.post-category {
+display: inline-block; background: var(--primary); color: white;
+font-size: 12px; font-weight: 700; padding: 4px 12px;
+border-radius: 20px; margin-bottom: 14px; letter-spacing: 0.3px;
+}
+
+/* 記事なし表示 */
+.no-results {
+text-align: center; padding: 60px 20px; color: var(--light);
+font-size: 18px; display: none;
 }
 
 /* === 記事カード === */
@@ -81,12 +145,16 @@ margin-bottom: 25px; flex-wrap: wrap;
 .post-excerpt {
 padding: 0 40px 40px; font-size: 17px; color: #555; line-height: 1.8;
 }
-.post img {
-max-width: 100%; 
-height: 300px;  /* ← この行を追加 */
-object-fit: cover;
-border-radius: 15px; margin: 25px 0;
-box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+.post img,
+.post video {
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px; 
+    margin: 25px auto;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    display: block;
 }
 .post-footer {
 padding: 0 40px 40px; display: flex; justify-content: space-between;
@@ -145,6 +213,7 @@ margin-top: 80px;
 .post-meta { flex-direction: column; gap: 10px; }
 .cookie-buttons { flex-direction: column; align-items: center; }
 .cookie-btn { width: 100%; max-width: 250px; }
+.cat-btn { font-size: 13px; padding: 9px 16px; }
 }
 @media (max-width: 480px) {
 h1 { font-size: 32px; }
@@ -153,10 +222,12 @@ h1 { font-size: 32px; }
 </style>
 </head>
 <body>
+<!-- GTM noscript désactivé : ne se charge qu'après consentement explicite -->
+<!-- End Google Tag Manager (noscript) -->
 <!-- RGPD Cookie Banner -->
 <div class="cookie-banner" id="cookieBanner">
 <div>🍪 Ce site utilise des cookies pour améliorer votre expérience de navigation et analyser votre usage.
-<a href="#" style="color: #87ceeb; text-decoration: underline;">En savoir plus</a>
+<a href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/que-dit-la-loi" target="_blank" rel="noopener noreferrer" style="color: #87ceeb; text-decoration: underline;">En savoir plus</a>
 </div>
 <div class="cookie-buttons">
 <button class="cookie-btn cookie-accept" onclick="acceptCookies()">✅ Accepter</button>
@@ -167,15 +238,23 @@ h1 { font-size: 32px; }
 <!-- Navigation -->
 <nav class="nav">
 <div class="nav-content">
-<a href="/">← Accueil</a>
-<a href="./blog.html">Blog</a>
+<a href="index.html">← Accueil</a>
+<a href='blog.html'>Blog</a>
 </div>
 </nav>
 
 <!-- Header -->
 <div class="header">
 <h1>Blog Synaptika</h1>
-<p class="subtitle">Innovation • Intelligence Artificielle • Nutrition Scolaire</p>
+<p class="subtitle">Développement personnel • Bien-être holistique • Santé naturelle</p>
+</div>
+
+<!-- Filtre catégories -->
+<div class="category-filter">
+<div class="category-filter-label">Filtrer par thème</div>
+<div class="cat-buttons" id="catButtons">
+<!-- Les boutons seront générés par JavaScript -->
+</div>
 </div>
 
 <!-- Posts (動的に読み込まれる) -->
@@ -183,38 +262,90 @@ h1 { font-size: 32px; }
 <!-- Les articles seront chargés ici par JavaScript -->
 </div>
 
+<!-- Message si aucun résultat -->
+<div class="no-results" id="noResults">Aucun article dans cette catégorie pour le moment.</div>
+
 <!-- Footer -->
 <footer class="footer">
 <p>© 2026 Synaptika. Tous droits réservés.</p>
-<p><a href="index.html" style="color: var(--primary);">← Retour à l'accueil</a></p>
+<p><a href='index.html' style='color: var(--primary);'>← Retour à l'accueil</a></p>
 </footer>
 
+<script async src="https://cdn.counter.dev/script.js" data-id="f5657ede-6192-41bd-a900-2c95071972e3" data-utcoffset="-4"></script>
+
 <!-- posts.jsを読み込む -->
-<script src="./posts.js"></script>
+<script src="posts.js"></script>
 
 <script>
-// 記事を動的に生成して表示
-function loadPosts() {
-const container = document.getElementById('postsContainer');
+// カテゴリー設定（順序・絵文字付き）
+const CATEGORIES = [
+  { key: "all",                      label: "✨ Tous les articles" },
+  { key: "Développement personnel",  label: "🌱 Développement personnel" },
+  { key: "Santé & Bien-être",        label: "💚 Santé & Bien-être" },
+  { key: "Nutrition",                label: "🥗 Nutrition" },
+  { key: "Thérapies corporelles",    label: "🤲 Thérapies corporelles" },
+  { key: "Productivité",             label: "⚡ Productivité" },
+  { key: "Histoire & Inspiration",   label: "🏛 Histoire & Inspiration" },
+  { key: "Techniques énergétiques",  label: "☯️ Techniques énergétiques" },
+];
 
-console.log('🔍 Début de loadPosts()');
-console.log('📊 typeof posts:', typeof posts);
-console.log('📋 posts:', window.posts || posts);
+let activeCategory = "all";
 
-if (typeof posts === 'undefined' || !posts || posts.length === 0) {
-console.error('❌ Aucun article trouvé !');
-container.innerHTML = '<p style="text-align: center; padding: 40px; color: var(--light);">Aucun article disponible pour le moment.</p>';
-return;
+// カテゴリーボタンを生成
+function buildCategoryButtons() {
+  const container = document.getElementById('catButtons');
+  CATEGORIES.forEach(cat => {
+    const count = cat.key === "all"
+      ? posts.length
+      : posts.filter(p => p.category === cat.key).length;
+
+    const btn = document.createElement('button');
+    btn.className = 'cat-btn' + (cat.key === "all" ? ' active' : '');
+    btn.dataset.cat = cat.key;
+    btn.innerHTML = `${cat.label} <span class="count">${count}</span>`;
+    btn.addEventListener('click', () => filterByCategory(cat.key));
+    container.appendChild(btn);
+  });
 }
 
-console.log('✅ Articles trouvés:', posts.length);
-  
-posts.forEach((post, index) => {
-const article = document.createElement('article');
-article.className = 'post';
-    
-article.innerHTML = `
+// カテゴリーでフィルタリング
+function filterByCategory(catKey) {
+  activeCategory = catKey;
+
+  // ボタンのactive状態を更新
+  document.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.cat === catKey);
+  });
+
+  // 記事の表示/非表示
+  const articles = document.querySelectorAll('.post');
+  let visible = 0;
+  articles.forEach(article => {
+    const match = catKey === "all" || article.dataset.category === catKey;
+    article.style.display = match ? '' : 'none';
+    if (match) visible++;
+  });
+
+  document.getElementById('noResults').style.display = visible === 0 ? 'block' : 'none';
+}
+
+// 記事を動的に生成して表示
+function loadPosts() {
+  const container = document.getElementById('postsContainer');
+
+  if (typeof posts === 'undefined' || !posts || posts.length === 0) {
+    container.innerHTML = '<p style="text-align: center; padding: 40px; color: var(--light);">Aucun article disponible pour le moment.</p>';
+    return;
+  }
+
+  posts.forEach((post, index) => {
+    const article = document.createElement('article');
+    article.className = 'post';
+    article.dataset.category = post.category || '';
+
+    article.innerHTML = `
 <div class="post-header">
+${post.category ? `<span class="post-category">${post.category}</span>` : ''}
 <h2 class="post-title">${post.title || 'Sans titre'}</h2>
 <div class="post-meta">
 ${post.date ? `<span>📅 ${post.date}</span>` : ''}
@@ -223,61 +354,68 @@ ${post.reads ? `<span>⭐ ${post.reads} lectures</span>` : ''}
 </div>
 </div>
 <div class="post-excerpt">
-${post.image ? `<img src="${post.image}" alt="${post.title}">` : ''}
+${post.image ? (post.image.toLowerCase().endsWith('.mp4') ? 
+  `<video autoplay loop muted playsinline aria-label="${post.title}"><source src="https://6a282a830373951d45cde7d3--synaptika.netlify.app/${post.image}" type="video/mp4">Votre navigateur ne supporte pas la vidéo.</video>` : 
+  `<img src="https://6a282a830373951d45cde7d3--synaptika.netlify.app/${post.image}" alt="${post.title}">`
+) : ''}
 ${post.excerpt ? `<p>${post.excerpt}</p>` : ''}
 </div>
 <div class="post-footer">
 <div class="tags">
 ${post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join('') : ''}
 </div>
-<a href="${post.file}" class="btn-primary">Lire la suite →</a>
+<a href="https://6a282a830373951d45cde7d3--synaptika.netlify.app/${post.file}" class="btn-primary">Lire la suite →</a>
 </div>
 `;
-    
-container.appendChild(article);
-});
-  
-// アニメーション適用
-setTimeout(() => {
-const observer = new IntersectionObserver((entries) => {
-entries.forEach((entry, index) => {
-if (entry.isIntersecting) {
-setTimeout(() => entry.target.classList.add('animate'), index * 150);
-}
-});
-});
-document.querySelectorAll('.post').forEach(post => observer.observe(post));
-}, 100);
+
+    container.appendChild(article);
+  });
+
+  // カテゴリーボタンを生成
+  buildCategoryButtons();
+
+  // アニメーション適用
+  setTimeout(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('animate'), index * 150);
+        }
+      });
+    });
+    document.querySelectorAll('.post').forEach(post => observer.observe(post));
+  }, 100);
 }
 
-// RGPD Cookie（セーフ実装）
 function initCookies() {
-if (!localStorage.getItem('cookiesAccepted')) {
-setTimeout(() => {
-document.getElementById('cookieBanner').classList.add('show');
-}, 2000);
-}
+  var consent = localStorage.getItem('cookiesAccepted');
+  if (consent === null) {
+    setTimeout(() => {
+      document.getElementById('cookieBanner').classList.add('show');
+    }, 2000);
+  }
 }
 
 function acceptCookies() {
-localStorage.setItem('cookiesAccepted', 'true');
-document.getElementById('cookieBanner').classList.remove('show');
+  localStorage.setItem('cookiesAccepted', 'true');
+  document.getElementById('cookieBanner').classList.remove('show');
+  loadGTM();
 }
 
 function declineCookies() {
-localStorage.setItem('cookiesAccepted', 'false');
-document.getElementById('cookieBanner').classList.remove('show');
+  localStorage.setItem('cookiesAccepted', 'false');
+  document.getElementById('cookieBanner').classList.remove('show');
 }
 
 // ページ読み込み完了後実行
 if (document.readyState === 'loading') {
-document.addEventListener('DOMContentLoaded', () => {
-loadPosts();
-initCookies();
-});
+  document.addEventListener('DOMContentLoaded', () => {
+    loadPosts();
+    initCookies();
+  });
 } else {
-loadPosts();
-initCookies();
+  loadPosts();
+  initCookies();
 }
 </script>
 </body>

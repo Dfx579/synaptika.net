@@ -1,28 +1,757 @@
+/* ============================================
+   Synaptika - style.css
+   Tailwindを廃止して直接CSSに変換したもの
+   ============================================ */
+
+/* --- カラー変数（サイト全体で使う色） --- */
+:root {
+  --color-primary: #7c3aed;      /* purple-600 */
+  --color-primary-dark: #6d28d9; /* purple-700 */
+  --color-accent: #8b5cf6;       /* purple-500 */
+  --color-secondary: #7c3aed;    /* purple-600 */
+  --color-light: #f9fafb;        /* gray-50 */
+  --color-gray-100: #f3f4f6;
+  --color-gray-300: #d1d5db;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+}
+
+/* --- リセット・基本 --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* --- body --- */
 body {
-	padding: 2rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
+  background-color: var(--color-light);
+  padding-top: 4rem; /* pt-16 : ナビバーの高さ分 */
+  margin: 0;
+  color: #111827;
 }
 
-h1 {
-	font-size: 16px;
-	margin-top: 0;
+/* --- 共通コンテナ --- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-p {
-	color: rgb(107, 114, 128);
-	font-size: 15px;
-	margin-bottom: 10px;
-	margin-top: 5px;
+/* ============================================
+   ナビゲーション
+   ============================================ */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 50;
 }
 
-.card {
-	max-width: 620px;
-	margin: 0 auto;
-	padding: 16px;
-	border: 1px solid lightgray;
-	border-radius: 16px;
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.card p:last-child {
-	margin-bottom: 0;
+/* ロゴ */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* PCメニュー */
+.nav-links {
+  display: none; /* モバイルでは非表示 */
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--color-gray-700);
+  text-decoration: none;
+  transition: color 0.2s;
+  outline: none; /* 青いフォーカスボーダーを消す */
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+.nav-links a:focus-visible {
+  outline: 2px solid var(--color-primary); /* キーボード操作時だけ表示（アクセシビリティ維持） */
+  border-radius: 2px;
+}
+
+/* ハンバーガーボタン（モバイル） */
+.nav-hamburger {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-hamburger svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* PC幅で切り替え */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+  .nav-hamburger {
+    display: none;
+  }
+}
+
+/* ============================================
+   ヒーローセクション
+   ============================================ */
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  color: #ffffff;
+  /* グラデーション＋背景画像を1つにまとめる */
+  background:
+    linear-gradient(to right, rgba(124,58,237,0.88), rgba(139,92,246,0.88)),
+    url('https://synaptika.net/images/fond1.webp') center/cover no-repeat;
+}
+
+.hero-overlay-image,
+.hero-overlay-gradient {
+  display: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 42rem;
+  margin: 0 auto;
+  color: #ffffff;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.5rem;
+  }
+}
+
+/* ============================================
+   メインオファーセクション
+   ============================================ */
+.section-offer {
+  background-color: #ffffff;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.section-offer .container {
+  text-align: center;
+}
+
+/* アイコン＋見出しの横並び */
+.offer-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.offer-heading svg,
+.offer-heading i {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.75rem;
+  color: var(--color-secondary);
+}
+
+.offer-heading h2 {
+  font-size: 1.875rem;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.offer-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-accent);
+  margin-bottom: 4rem;
+}
+
+.offer-description {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-gray-700);
+}
+
+/* 画像＋ボックスの横並びレイアウト */
+.offer-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .offer-layout {
+    flex-direction: row;
+    align-items: center;
+  }
+  .offer-image-wrap {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+  .offer-box {
+    flex: 0 0 50%;
+    width: 50%;
+    align-self: center;
+  }
+}
+
+.offer-image {
+  width: 15rem;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  max-width: 100%;
+}
+
+.offer-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.offer-image-wrap img {
+  width: 100%;
+  max-width: 365px; /* 304px × 120% */
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  display: block;
+  margin: 0 auto;
+}
+
+/* 特典ボックス */
+.offer-box {
+  background-color: var(--color-light);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.08);
+  width: 100%;
+  text-align: left;
+  align-self: center; /* vertical center vs image */
+}
+
+.offer-box h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+/* 特典グリッド */
+.offer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.offer-grid-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.offer-grid-item .icon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  color: var(--color-secondary);
+  flex-shrink: 0;
+}
+
+.offer-grid-item h4 {
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+}
+
+.offer-grid-item p {
+  margin: 0;
+  color: var(--color-gray-600);
+  font-size: 0.95rem;
+}
+
+.offer-note {
+  margin-bottom: 1.5rem;
+  color: var(--color-gray-700);
+}
+
+.offer-privacy {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-600);
+}
+
+.offer-privacy svg,
+.offer-privacy i {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .offer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .offer-privacy {
+    justify-content: flex-start;
+  }
+}
+
+
+
+/* ============================================
+   フォーム
+   ============================================ */
+.signup-form {
+  max-width: 28rem;
+  margin: 3rem auto 0;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .signup-form {
+    /* Centre la form sur la ligne de séparation 50/50 :
+       décalage = 50% de 1200px moins la moitié de la form */
+    margin-left: calc(50% - 14rem);
+    margin-right: auto;
+  }
+}
+
+.signup-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.signup-form .form-group:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-gray-300);
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.signup-form input[type="text"]:focus,
+.signup-form input[type="email"]:focus {
+  box-shadow: 0 0 0 2px var(--color-secondary);
+}
+
+.signup-form .checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.signup-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--color-primary);
+}
+
+.signup-form .checkbox-text {
+  font-size: 0.875rem;
+  color: var(--color-gray-700);
+}
+
+/* ============================================
+   ボタン（共通）
+   ============================================ */
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-rounded {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+}
+
+.btn-rounded:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* ============================================
+   無料リソースセクション
+   ============================================ */
+.section-resources {
+  padding: 4rem 1rem;
+  background-color: var(--color-gray-100);
+  text-align: center;
+}
+
+.section-resources h2 {
+  font-size: 1.875rem;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.section-resources p {
+  font-size: 1.125rem;
+  color: var(--color-gray-700);
+  margin-bottom: 2rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================
+   ホリスティックメソッドセクション
+   ============================================ */
+.section-holistic {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-holistic h2 {
+  font-size: 1.875rem;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.section-holistic p {
+  font-size: 1.125rem;
+  color: var(--color-gray-700);
+  margin-bottom: 2rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================
+   ブログセクション
+   ============================================ */
+.section-blog {
+  padding: 4rem 1rem;
+  background-color: var(--color-gray-100);
+}
+
+.section-blog .blog-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-blog h2 {
+  font-size: 1.875rem;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.section-blog p {
+  font-size: 1.125rem;
+  color: var(--color-gray-700);
+  margin-bottom: 1rem;
+}
+
+.section-blog .blog-sub {
+  color: var(--color-gray-600);
+}
+
+/* ブログカードグリッド */
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ブログカード（JS動的生成分も含む） */
+.blog-grid .bg-white {
+  background-color: #ffffff;
+}
+.blog-grid .rounded-2xl {
+  border-radius: 1rem;
+}
+.blog-grid .shadow-md {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.blog-grid .overflow-hidden {
+  overflow: hidden;
+}
+.blog-grid img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+.blog-grid .p-6 {
+  padding: 1.5rem;
+}
+.blog-grid h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-gray-800);
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+.blog-grid p {
+  color: var(--color-gray-600);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.blog-grid a.text-purple-600 {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+.blog-grid a.text-purple-600:hover {
+  color: var(--color-primary-dark);
+}
+
+.blog-footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* ============================================
+   フッター
+   ============================================ */
+footer {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-700);
+  padding: 3rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid var(--color-gray-300);
+}
+
+footer .container {
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+/* SNSアイコン */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  color: var(--color-gray-600);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.social-links a:hover.youtube { color: #dc2626; }
+.social-links a:hover.pinterest { color: #b91c1c; }
+.social-links a:hover.bluesky { color: #3b82f6; }
+
+.social-links svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--color-gray-300);
+  padding-top: 1.5rem;
+}
+
+.footer-bottom p {
+  color: var(--color-gray-500);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* ============================================
+   スクリーンリーダー専用（sr-only）
+   ============================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ============================================
+   フォーム追加スタイル（画像2のデザインに合わせた上書き）
+   ============================================ */
+
+/* SendFoxが挿入する<p>タグのマージンをリセット */
+.signup-form p {
+  margin: 0;
+}
+
+/* インプット欄 */
+.signup-form input[type="text"],
+.signup-form input[type="email"] {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-gray-300);
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  color: var(--color-gray-700);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.signup-form input[type="text"]::placeholder,
+.signup-form input[type="email"]::placeholder {
+  color: var(--color-gray-500);
+}
+
+.signup-form input[type="text"]:focus,
+.signup-form input[type="email"]:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(124,58,237,0.15);
+}
+
+/* 送信ボタン */
+.signup-form .btn-submit {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-bottom: 1rem;
+}
+
+.signup-form .btn-submit:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+/* スパムなしメモ */
+.signup-form .form-spam-note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-gray-700);
+  margin: 0 !important;
+}
+
+/* チェックボックス */
+.signup-form .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.signup-form .checkbox-text {
+  font-size: 0.9rem;
+  color: var(--color-gray-700);
 }

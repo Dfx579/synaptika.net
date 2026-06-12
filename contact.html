@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactez Synaptika – Posez vos questions sur nos ateliers anti-stress en Martinique." />
+  <title>Contact – Synaptika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      color: #333;
+      background: #f9f9f9;
+      min-height: 100vh;
+    }
+
+    /* ── TOP SECTION ── */
+    .top-section {
+      background: #f9f9f9;
+      text-align: center;
+      padding: 80px 20px 70px;
+    }
+
+    .top-section h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      color: #6b63d4;
+      margin-bottom: 40px;
+    }
+
+    .top-divider {
+      width: 80%;
+      max-width: 1000px;
+      margin: 0 auto 56px;
+      border: none;
+      border-top: 2px solid #b2e8d8;
+    }
+
+    .top-section p {
+      font-size: 22px;
+      color: #444;
+      line-height: 2;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* ── GRADIENT SECTION ── */
+    .gradient-section {
+      background: linear-gradient(135deg, #22c55e 0%, #5ec8c8 50%, #7dd3d3 100%);
+      color: #fff;
+      padding: 80px 20px 100px;
+      text-align: center;
+    }
+
+    .gradient-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .gradient-section .subtitle {
+      font-size: 20px;
+      opacity: 0.9;
+      margin-bottom: 60px;
+    }
+
+    /* ── FORM CARD ── */
+    .form-card {
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 20px;
+      padding: 56px 48px;
+      max-width: 680px;
+      margin: 0 auto;
+      backdrop-filter: blur(6px);
+    }
+
+    .form-group {
+      margin-bottom: 28px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 16px 20px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.25);
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #fff;
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    /* ── SUBMIT BUTTON ── */
+    .submit-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff9a6c, #ff6b9d);
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      padding: 18px 48px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 100%;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    /* ── SUCCESS MESSAGE ── */
+    .success-msg {
+      display: none;
+      background: rgba(255,255,255,0.25);
+      border: 2px solid rgba(255,255,255,0.7);
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      font-size: 22px;
+      line-height: 2;
+    }
+
+    .success-msg .checkmark {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    /* ── DIVIDER ── */
+    .g-divider {
+      width: 60px;
+      border: none;
+      border-top: 2px solid rgba(255,255,255,0.5);
+      margin: 60px auto;
+    }
+
+    /* ── FOOTER ── */
+    .footer-section {
+      background: linear-gradient(135deg, #22c55e 0%, #5ec8c8 50%, #7dd3d3 100%);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border: 2px solid rgba(255,255,255,0.6);
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 14px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .back-btn:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    @media (max-width: 600px) {
+      .top-section h1 { font-size: 2rem; }
+      .gradient-section h2 { font-size: 1.8rem; }
+      .form-card { padding: 36px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── TOP SECTION ── -->
+  <section class="top-section">
+    <h1>Contact</h1>
+    <hr class="top-divider" />
+    <p>Une question sur nos ateliers ? Je vous réponds dans les plus brefs délais 🌿</p>
+  </section>
+
+  <!-- ── FORM SECTION ── -->
+  <section class="gradient-section">
+
+    <h2>📧 Envoyez-moi un message</h2>
+    <p class="subtitle">Tous les champs sont obligatoires</p>
+
+    <div class="form-card">
+
+      <!-- ✅ Netlify Forms : data-netlify="true" suffit -->
+      <form id='contactForm' method='POST' name='contact'>
+        <!-- Champ caché requis par Netlify -->
+        <input type="hidden" name="form-name" value="contact" />
+
+        <!-- Anti-spam honeypot (invisible) -->
+        <div style="display:none;">
+          <input name="bot-field" />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Votre prénom</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ex : Marie"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Votre adresse email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ex : marie@email.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Votre message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Posez votre question ici..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          ✉️ ENVOYER MON MESSAGE
+        </button>
+
+      </form>
+
+      <!-- Message affiché après envoi réussi -->
+      <div class="success-msg" id="successMsg">
+        <div class="checkmark">✅</div>
+        <strong>Message envoyé !</strong><br />
+        Merci pour votre message.<br />Je vous réponds très vite 🌿
+      </div>
+
+    </div>
+
+    <hr class="g-divider" />
+
+    <p style="font-weight:700;font-size:22px;letter-spacing:1px;">Synaptika</p>
+    <p style="font-size:18px;opacity:0.85;margin-top:8px;">Libérez-vous du stress en 10 minutes par jour</p>
+
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <div class="footer-section">
+    <a href="index.html" class="back-btn">Retour à l'accueil</a>
+  </div>
+
+  <script>
+    // Netlifyはフォーム送信後に同じページにリダイレクトする
+    // URLに ?success が付いたら成功メッセージを表示する
+    if (window.location.search.includes('success')) {
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

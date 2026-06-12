@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id=GTM-PZXHJFPV'+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PZXHJFPV');</script>
+<!-- End Google Tag Manager -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez nos ateliers anti-stress GRATUITS Synaptika en Martinique. Libérez votre stress et rechargez votre énergie avec Gym Tao, Brain Gym et techniques naturelles. Places limitées !">
   <title>Événements – Synaptika</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   <style>
@@ -38,7 +46,7 @@
     }
 
     .top-section p {
-      font-size: 20px;
+      font-size: 24px;
       color: #444;
       line-height: 2.2;
       max-width: 780px;
@@ -68,10 +76,15 @@
     }
 
     .gradient-section .intro {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 2.2;
       max-width: 640px;
       margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .gradient-section .intro.center-line {
+      text-align: center;
     }
 
     /* hero image */
@@ -92,23 +105,23 @@
       border-radius: 50px;
       padding: 14px 36px;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 24px;
       margin-bottom: 60px;
       line-height: 1.6;
     }
 
-    /* info blocks */
+    /* info blocks - PLUS LARGE */
     .info-block {
       text-align: left;
-      max-width: 640px;
+      max-width: 780px;
       margin: 0 auto 60px;
       background: rgba(255,255,255,0.15);
       border-radius: 14px;
-      padding: 40px 44px;
+      padding: 44px 50px;
     }
 
     .info-block p {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 2.2;
       margin-bottom: 20px;
     }
@@ -135,7 +148,7 @@
     }
 
     .icon-list li {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 2.2;
       margin-bottom: 22px;
       display: flex;
@@ -154,7 +167,7 @@
     }
 
     .check-list li {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 2.2;
       margin-bottom: 20px;
     }
@@ -180,12 +193,12 @@
 
     .date-card .date-title {
       font-weight: 700;
-      font-size: 20px;
+      font-size: 24px;
       margin-bottom: 14px;
     }
 
     .date-card .date-info {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 2.2;
     }
 
@@ -206,7 +219,7 @@
       padding: 30px 34px;
       flex: 1 1 260px;
       font-style: italic;
-      font-size: 20px;
+      font-size: 24px;
       line-height: 2.2;
     }
 
@@ -214,7 +227,7 @@
       font-style: normal;
       font-weight: 700;
       margin-top: 18px;
-      font-size: 18px;
+      font-size: 22px;
     }
 
     /* CTA button */
@@ -241,7 +254,7 @@
     }
 
     .cta-note {
-      font-size: 17px;
+      font-size: 20px;
       opacity: 0.85;
       margin-bottom: 60px;
       line-height: 2;
@@ -257,7 +270,7 @@
       text-align: left;
     }
 
-    .privacy-box p { font-size: 20px; line-height: 2.2; margin-bottom: 14px; }
+    .privacy-box p { font-size: 24px; line-height: 2.2; margin-bottom: 14px; }
 
     /* FAQ */
     .faq {
@@ -270,20 +283,20 @@
 
     .faq-item .q {
       font-weight: 700;
-      font-size: 20px;
+      font-size: 24px;
       margin-bottom: 14px;
       line-height: 2;
     }
 
     .faq-item .a {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 2.2;
       opacity: 0.92;
     }
 
     /* contact */
     .contact-box {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 2.2;
       margin-bottom: 60px;
     }
@@ -291,6 +304,25 @@
     .contact-box a {
       color: #fff;
       font-weight: 700;
+    }
+
+    /* limited places note */
+    .limited-places {
+      font-size: 22px !important;
+      opacity: 0.88 !important;
+    }
+
+    /* contre-indications list - PLUS LARGE */
+    .contre-indications-list {
+      max-width: 500px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    /* doctor note */
+    .doctor-note {
+      font-size: 21px !important;
+      opacity: 0.85 !important;
     }
 
     /* footer */
@@ -325,12 +357,31 @@
     @media (max-width: 600px) {
       .gradient-section h2 { font-size: 1.8rem; }
       .top-section h1 { font-size: 2rem; }
+      .top-section p,
+      .gradient-section .intro,
+      .info-block p,
+      .icon-list li,
+      .check-list li,
+      .date-card .date-title,
+      .date-card .date-info,
+      .testimonial,
+      .privacy-box p,
+      .faq-item .q,
+      .faq-item .a,
+      .contact-box,
+      .badge { font-size: 20px; }
+      .info-block { max-width: 100%; padding: 32px 24px; }
+      .limited-places { font-size: 20px !important; }
     }
   </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZXHJFPV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-  <!-- ══════════════ TOP: Événements (inchangé) ══════════════ -->
+  <!-- ══════════════ TOP: Événements (24px maintenant) ══════════════ -->
   <section class="top-section">
     <h1>Événements</h1>
     <hr class="top-divider" />
@@ -339,24 +390,26 @@
     <p>Découvrez les prochains ateliers, leur contenu, les horaires, ainsi que les modalités d'inscription pour libérer votre stress, dynamiser votre énergie, et retrouver bien-être et équilibre au quotidien.</p>
   </section>
 
-  <!-- ══════════════ MINI-ATELIER SECTION (contenu mis à jour) ══════════════ -->
+  <!-- ══════════════ MINI-ATELIER SECTION ══════════════ -->
   <section class="gradient-section">
 
     <h2>Mini-atelier Synaptika - GRATUIT</h2>
     <p class="subtitle">Libérez votre stress et dynamisez votre énergie en 1h30</p>
     <p class="intro" style="white-space:nowrap;">
-      Vous vous sentez fatiguée, tendue, dépassée par le quotidien ?<br />
+      Vous vous sentez fatiguée, tendue, dépassée par le quotidien ?
+    </p>
+    <p class="intro center-line">
       Offrez-vous une pause bien-être dans un cadre apaisant du Nord Martinique.
     </p>
 
     <!-- Image hibiscus yin-yang -->
     <img
-      src="./images/atelier-synaptika.png"
+      src="images/atelier-synaptika.webp"
       alt="Mini-atelier Synaptika"
       class="hero-img"
     />
 
-    <div class="badge" style="white-space:nowrap;">🎁 Atelier découverte GRATUIT (valeur 45€) · Places limitées à 10 personnes</div>
+    <div class="badge" style="white-space:nowrap;">🎁 Atelier découverte GRATUIT (valeur 45€) · Places limitées à 15 personnes</div>
 
     <hr class="g-divider" />
 
@@ -386,23 +439,19 @@
     <p class="section-title">📅 Prochaines dates</p>
     <div class="dates-grid">
       <div class="date-card">
-        <p class="date-title">Samedi 8 mars 2026</p>
-        <p class="date-info" style="white-space:nowrap;">9h00 – 10h30<br />Nord Martinique – Morne Rouge</p>
-      </div>
-      <div class="date-card">
-        <p class="date-title">Samedi 22 mars 2026</p>
-        <p class="date-info" style="white-space:nowrap;">9h00 – 10h30<br />Nord Martinique – Carbet</p>
+        <p class="date-title">🗓️ Prochaine date</p>
+        <p class="date-info">À venir — Inscrivez-vous pour être informé(e) en priorité !</p>
       </div>
     </div>
-    <p class="intro" style="font-size:0.9rem;opacity:0.88;">Places limitées : 10 personnes par session<br />(Le lieu exact sera communiqué aux participants inscrits)</p>
+    <p class="intro limited-places">Les prochaines dates seront annoncées bientôt.<br />Places limitées : 15 personnes par session</p>
 
     <hr class="g-divider" />
 
-    <!-- Infos pratiques -->
+    <!-- Infos pratiques - PLUS LARGE -->
     <p class="section-title">📍 Infos pratiques</p>
     <div class="info-block">
-      <p>⏱️ <strong>Durée :</strong> 1h30</p>
-      <p style="white-space:nowrap;">📍 <strong>Où ?</strong> Nord Martinique (Carbet ou Morne Rouge selon les dates)</p>
+      <p>⏱️ <strong>Durée :</strong> 1h</p>
+      <p style="white-space:nowrap;">📍 <strong>Où ? :</strong> Nord Martinique (Carbet ou Morne Rouge selon les dates)</p>
       <p>👥 <strong>Groupe :</strong> Petit effectif pour un accompagnement de qualité</p>
       <p>💰 <strong>Tarif :</strong> GRATUIT (dans la limite des places disponibles)</p>
       <p>🎒 <strong>À prévoir :</strong> Vêtements amples et confortables · Bouteille d'eau · Protection solaire si atelier en extérieur</p>
@@ -410,31 +459,16 @@
 
     <hr class="g-divider" />
 
-    <!-- Contre-indications -->
+    <!-- Contre-indications - PLUS LARGE -->
     <p class="section-title">⚠️ Contre-indications</p>
     <p class="intro">Cet atelier n'est pas adapté en cas de :</p>
-    <ul class="icon-list" style="max-width:340px;margin-left:auto;margin-right:auto;">
+    <ul class="icon-list contre-indications-list">
       <li><span class="icon">•</span> Grossesse (surtout 1er trimestre)</li>
       <li><span class="icon">•</span> Problèmes cardiaques non stabilisés</li>
       <li><span class="icon">•</span> Hypertension non contrôlée</li>
-      <li><span class="icon">•</span><span style="white-space:nowrap;">Opération récente (moins de 3 mois)</span></li>
+      <li><span class="icon">•</span> Opération récente (moins de 3 mois)</li>
     </ul>
-    <p class="intro" style="font-size:0.88rem;opacity:0.85;">En cas de doute, consultez votre médecin avant de vous inscrire.</p>
-
-    <hr class="g-divider" />
-
-    <!-- Témoignages -->
-    <p class="section-title">💬 Ce que disent les participantes</p>
-    <div class="testimonials">
-      <div class="testimonial">
-        "Une vraie bulle de bien-être ! Je me suis sentie apaisée dès la première séance."
-        <p class="author">— Marie, Fort-de-France</p>
-      </div>
-      <div class="testimonial">
-        "Des techniques simples que j'utilise maintenant tous les jours. Merci !"
-        <p class="author">— Sylvie, Lamentin</p>
-      </div>
-    </div>
+    <p class="intro doctor-note">En cas de doute, consultez votre médecin avant de vous inscrire.</p>
 
     <hr class="g-divider" />
 
@@ -452,7 +486,7 @@
     <!-- CTA principal -->
     <p class="section-title">👉 Réservez votre place (c'est gratuit !)</p>
     <a
-      href="https://huggingface.co/"
+      href="https://tally.so/r/vGARad"
       target="_blank"
       rel="noopener noreferrer"
       class="cta-btn"
@@ -506,16 +540,16 @@
     <!-- Contact -->
     <p class="section-title">📧 Une question ?</p>
     <div class="contact-box">
-      <p>Contactez-moi : <a href="mailto:Synaptika.infos@gmx.fr">Synaptika.infos@gmx.fr</a></p>
+      <p>Vous avez une question ? <a href="contact.html" class="cta-btn" style="font-size:18px;padding:14px 32px;">Écrivez-moi</a></p>
     </div>
 
     <hr class="g-divider" />
 
     <!-- Final CTA -->
     <p class="section-title">🌺 Prête à vous offrir cette pause bien-être ?</p>
-    <p class="intro">Ne laissez pas passer cette opportunité !<br />Places limitées à 10 personnes par session.</p>
+    <p class="intro">Ne laissez pas passer cette opportunité !<br />Places limitées à 15 personnes par session.</p>
     <a
-      href="https://huggingface.co/"
+      href="https://tally.so/r/vGARad"
       target="_blank"
       rel="noopener noreferrer"
       class="cta-btn"
@@ -529,9 +563,13 @@
   </section>
 
   <!-- FOOTER -->
+  
+  <script async src="https://cdn.counter.dev/script.js" data-id="f5657ede-6192-41bd-a900-2c95071972e3" data-utcoffset="-4"></script>
+
   <div class="footer-section">
-    <a href="/" class="back-btn">Retour à l'accueil</a>
+    <a href="index.html" class="back-btn">Retour à l'accueil</a>
   </div>
 
 </body>
 </html>
+

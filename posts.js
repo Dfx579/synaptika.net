@@ -13,7 +13,7 @@ const posts = [
   },
   {
     title: "🛑 Pourquoi plus vous travaillez dur sous pression, plus vous sabotez vos résultats : Le piège de l'identité héroïque",
-    file: "./blog/identite-heroique-stress",
+    file: "./blog/superaliments",
     excerpt: "Entrepreneurs et cadres : comprenez pourquoi vos meilleures intentions échouent quand la pression monte — et comment sortir du piège identitaire.",
     date: "",
     author: "",
@@ -24,7 +24,7 @@ const posts = [
   },
   {
     title: "🪐 Pourquoi le même stress revient-il toujours ? Ce que votre thème astral peut vous révéler",
-    file: "./blog/theme-astral-stress",
+    file: "./blog/dauphins",
     excerpt: "Le stress n'est pas toujours lié à vos circonstances actuelles — il puise parfois ses racines dans des empreintes symboliques bien plus profondes.",
     date: "",
     author: "",

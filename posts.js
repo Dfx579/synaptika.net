@@ -194,7 +194,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/3-2.webp",
+    image: "./blog/image/3-2.png",
     tags: ["Nature", "Innovation"],
     category: "Histoire & Inspiration"
   },
@@ -238,7 +238,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/cerveau.webp",
+    image: "./blog/image/cerveau.png",
     tags: ["Développement personnel", "Transformation", "Neurosciences"],
     category: "Développement personnel"
   },
@@ -260,7 +260,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/intuition.webp",
+    image: "./blog/image/intuition.png",
     tags: ["Développement personnel"],
     category: "Développement personnel"
   },
@@ -282,7 +282,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/ombre-lumiere.webp",
+    image: "./blog/image/ombre-lumiere.png",
     tags: ["Développement personnel"],
     category: "Histoire & Inspiration"
   },
@@ -293,7 +293,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/grainesgermees.webp",
+    image: "./blog/image/grainesgermees.png",
     tags: ["Santé", "Nutrition"],
     category: "Nutrition"
   },
@@ -315,7 +315,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/TFH.webp",
+    image: "./blog/image/TFH.png",
     tags: ["Santé", "Nutrition"],
     category: "Thérapies corporelles"
   },
@@ -337,7 +337,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/meditation-arbres.webp",
+    image: "./blog/image/meditation-arbres.png",
     tags: ["Techniques", "Énergie"],
     category: "Techniques énergétiques"
   },

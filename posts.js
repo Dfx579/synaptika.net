@@ -18,7 +18,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/pression-travail-entrepreneur-cafe.png",
+    image: "./blog/image/pression-travail-entrepreneur-cafe.webp",
     tags: ["Développement personnel", "Leadership", "Gestion du stress", "Entrepreneur"],
     category: "Développement personnel"
   },
@@ -29,7 +29,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/theme-astral-stress.png",
+    image: "./blog/image/theme-astral-stress.webp",
     tags: ["Développement personnel", "Astrologie", "Gestion du stress", "Connaissance de soi"],
     category: "Développement personnel"
   },
@@ -40,7 +40,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/smoothie.png",
+    image: "./blog/image/smoothie.webp",
     tags: ["Nutrition", "Bien-être", "Martinique Nature", "Libération stress"],
     category: "Nutrition"
   },
@@ -51,7 +51,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/femme-mirroir.png",
+    image: "./blog/image/femme-mirroir.webp",
     tags: ["Bien-être", "Développement personnel", "Conscience corporelle"],
     category: "Développement personnel"
   },
@@ -62,7 +62,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/sagesse-eau.png",
+    image: "./blog/image/sagesse-eau.webp",
     tags: ["Développement personnel", "Gestion du stress", "Libération stress"],
     category: "Développement personnel"
   },
@@ -73,7 +73,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/boue-immunite.png",
+    image: "./blog/image/boue-immunite.webp",
     tags: ["Bien-être", "Développement personnel", "Libération stress"],
     category: "Développement personnel"
   },
@@ -84,7 +84,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/tai-chi-maitre-ballerine-chef-orchestre-harmonie.png",
+    image: "./blog/image/tai-chi-maitre-ballerine-chef-orchestre-harmonie.webp",
     tags: ["Bien-être", "Tai Ji Chuan", "Qi Gong"],
     category: "Techniques énergétiques"
   },
@@ -95,7 +95,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/rimed-razie.png",
+    image: "./blog/image/rimed-razie.webp",
     tags: ["Bien-être", "Rimèd Razié", "Martinique Nature"],
     category: "Santé & Bien-être"
   },
@@ -106,7 +106,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/chemin-foret.png",
+    image: "./blog/image/chemin-foret.webp",
     tags: ["Bien-être", "Développement personnel", "Libération stress"],
     category: "Développement personnel"
   },
@@ -117,7 +117,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/ruelle-de-quartier-populaire.png",
+    image: "./blog/image/ruelle-de-quartier-populaire.webp",
     tags: ["Japon", "Bien-être"],
     category: "Histoire & Inspiration"
   },
@@ -128,7 +128,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/jeune-pousse.png",
+    image: "./blog/image/jeune-pousse.webp",
     tags: ["Développement personnel", "Bien-être"],
     category: "Développement personnel"
   },
@@ -139,7 +139,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/essence.png",
+    image: "./blog/image/essence.webp",
     tags: ["Développement personnel", "Essences florales", "Yi King"],
     category: "Techniques énergétiques"
   },
@@ -150,7 +150,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/aromatherapie-efficace.png",
+    image: "./blog/image/aromatherapie-efficace.webp",
     tags: ["Libération stress", "Aromathérapie efficace"],
     category: "Santé & Bien-être"
   },
@@ -161,7 +161,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/ordinateur.png",
+    image: "./blog/image/ordinateur.webp",
     tags: ["Développement personnel", "Organisation numerique", "Productivite"],
     category: "Productivité"
   },
@@ -172,7 +172,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/Epsom.png",
+    image: "./blog/image/Epsom.webp",
     tags: ["Santé", "Histoire", "Bien-être"],
     category: "Histoire & Inspiration"
   },
@@ -183,7 +183,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/dauphin.png",
+    image: "./blog/image/dauphin.webp",
     tags: ["Productivité", "Sommeil", "Santé"],
     category: "Productivité"
   },
@@ -194,7 +194,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/3-2.png",
+    image: "./blog/image/3-2.webp",
     tags: ["Nature", "Innovation"],
     category: "Histoire & Inspiration"
   },
@@ -205,7 +205,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/trois-sagesses.png",
+    image: "./blog/image/trois-sagesses.webp",
     tags: ["Développement personnel", "Transformation", "Résilience"],
     category: "Développement personnel"
   },
@@ -216,7 +216,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/eau.png",
+    image: "./blog/image/eau.webp",
     tags: ["Santé", "Nutrition", "Hydratation"],
     category: "Nutrition"
   },
@@ -227,7 +227,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/Bowen.png",
+    image: "./blog/image/Bowen.webp",
     tags: ["Santé", "NST Bowen"],
     category: "Thérapies corporelles"
   },
@@ -238,7 +238,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/cerveau.png",
+    image: "./blog/image/cerveau.webp",
     tags: ["Développement personnel", "Transformation", "Neurosciences"],
     category: "Développement personnel"
   },
@@ -249,7 +249,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/Bowen.png",
+    image: "./blog/image/Bowen.webp",
     tags: ["Santé", "NST Bowen"],
     category: "Thérapies corporelles"
   },
@@ -260,7 +260,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/intuition.png",
+    image: "./blog/image/intuition.webp",
     tags: ["Développement personnel"],
     category: "Développement personnel"
   },
@@ -271,7 +271,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/yin-yang-tai-ji.png",
+    image: "./blog/image/yin-yang-tai-ji.webp",
     tags: ["Tai Ji Chuan", "Qi Gong", "Santé"],
     category: "Techniques énergétiques"
   },
@@ -282,7 +282,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/ombre-lumiere.png",
+    image: "./blog/image/ombre-lumiere.webp",
     tags: ["Développement personnel"],
     category: "Histoire & Inspiration"
   },
@@ -293,7 +293,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/grainesgermees.png",
+    image: "./blog/image/grainesgermees.webp",
     tags: ["Santé", "Nutrition"],
     category: "Nutrition"
   },
@@ -304,7 +304,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/super-aliments.png",
+    image: "./blog/image/super-aliments.webp",
     tags: ["Santé", "Nutrition"],
     category: "Nutrition"
   },
@@ -315,7 +315,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/TFH.png",
+    image: "./blog/image/TFH.webp",
     tags: ["Santé", "Nutrition"],
     category: "Thérapies corporelles"
   },
@@ -337,7 +337,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/meditation-arbres.png",
+    image: "./blog/image/meditation-arbres.webp",
     tags: ["Techniques", "Énergie"],
     category: "Techniques énergétiques"
   },
@@ -370,7 +370,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/revolution-cantine-japon.png",
+    image: "./blog/image/revolution-cantine-japon.webp",
     tags: ["Santé", "Nutrition", "Alimentation"],
     category: "Nutrition"
   },
@@ -381,7 +381,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/resilience.png",
+    image: "./blog/image/resilience.webp",
     tags: ["Développement personnel", "Transformation", "Résilience"],
     category: "Développement personnel"
   },
@@ -392,7 +392,7 @@ const posts = [
     date: "",
     author: "",
     reads: "",
-    image: "./blog/image/passe-avenir.png",
+    image: "./blog/image/passe-avenir.webp",
     tags: ["Développement personnel", "Transformation", "Résilience"],
     category: "Santé & Bien-être"
   }

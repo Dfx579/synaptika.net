@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+  command = "echo 'Site statique pur'"
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/blog/:splat"
+  status = 200

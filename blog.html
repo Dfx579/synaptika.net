@@ -364,7 +364,7 @@ ${post.excerpt ? `<p>${post.excerpt}</p>` : ''}
 <div class="tags">
 ${post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join('') : ''}
 </div>
-<a href="https://6a282a830373951d45cde7d3--synaptika.netlify.app/${post.file}" class="btn-primary">Lire la suite →</a>
+<a href="${post.file}.html" class="btn-primary">Lire la suite →</a>
 </div>
 `;
 

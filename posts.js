@@ -1,6 +1,17 @@
 // Liste des articles du blog Synaptika
 const posts = [
   {
+    title: "🌿 Comment optimiser votre pratique de l'EFT ?",
+    file: "./blog/comment-optimiser-pratique-eft",
+    excerpt: "Tapoter plus ne suffit pas. Découvrez comment enrichir votre pratique de l'EFT grâce à une lecture énergétique globale.",
+    date: "2026-06-26",
+    author: "Felicia Thierry",
+    reads: "10 min",
+    image: "./blog/images/image-optimisee-eft-meridiens.jpg",
+    tags: ["EFT", "Tapping", "Méridiens", "Énergétique", "Bien-être"],
+    category: "Techniques énergétiques"
+  },
+  {
     title: "Igname, Manioc, Patate Douce : Ce que Votre Grand-Mère Savait Déjà",
     file: "./blog/igname-manioc-patate-douce",
     excerpt: "Votre grand-mère n'avait pas de diplôme en nutrition. Elle avait un jardin.",

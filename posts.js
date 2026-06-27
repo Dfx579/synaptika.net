@@ -1,6 +1,17 @@
 // Liste des articles du blog Synaptika
 const posts = [
   {
+    title: "🌴 5 éléments du Tao en cuisine créole : les plats martiniquais qui régulent vos émotions",
+    file: "./blog/5-elements-tao-cuisine-creole-emotions-martinique",
+    excerpt: "Citron pays, margose, giromon, christophine, pois noirs : votre cuisine créole a toujours su prendre soin de vous.",
+    date: "2026-06-21",
+    author: "Felicia Thierry",
+    reads: "15 min",
+    image: "./blog/images/5-elements-assiette.jpg",
+    tags: ["5Éléments", "Tao", "CuisineCreole", "Martinique", "Émotions"],
+    category: "Nutrition"
+  },
+  {
     title: "🌿 Comment optimiser votre pratique de l'EFT ?",
     file: "./blog/comment-optimiser-pratique-eft",
     excerpt: "Tapoter plus ne suffit pas. Découvrez comment enrichir votre pratique de l'EFT grâce à une lecture énergétique globale.",

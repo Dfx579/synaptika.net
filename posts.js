@@ -35,7 +35,7 @@ const posts = [
   },
   {
     title: "🛑 Pourquoi plus vous travaillez dur sous pression, plus vous sabotez vos résultats : Le piège de l'identité héroïque",
-    file: "./blog/identite-heroique-stress",
+    file: "./blog/superaliments",
     excerpt: "Entrepreneurs et cadres : comprenez pourquoi vos meilleures intentions échouent quand la pression monte — et comment sortir du piège identitaire.",
     date: "",
     author: "",
@@ -46,7 +46,7 @@ const posts = [
   },
   {
     title: "🪐 Pourquoi le même stress revient-il toujours ? Ce que votre thème astral peut vous révéler",
-    file: "./blog/theme-astral-stress",
+    file: "./blog/dauphins",
     excerpt: "Le stress n'est pas toujours lié à vos circonstances actuelles — il puise parfois ses racines dans des empreintes symboliques bien plus profondes.",
     date: "",
     author: "",
@@ -200,7 +200,7 @@ const posts = [
   },
   {
     title: "Épuisé à 15 h ? La sagesse millénaire des dauphins pour vaincre la fatigue mentale",
-    file: "./blog/theme-astral-stress",
+    file: "./blog/dauphins",
     excerpt: "Et si vous adoptiez la technique de sommeil des dauphins pour optimiser votre énergie tout au long de la journée ?",
     date: "",
     author: "",
@@ -321,7 +321,7 @@ const posts = [
   },
   {
     title: "🌱 Les super-aliments créoles",
-    file: "./blog/identite-heroique-stress",
+    file: "./blog/superaliments",
     excerpt: "Votre arsenal nutritionnel pour une vitalité optimale",
     date: "",
     author: "",

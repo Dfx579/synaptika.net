@@ -200,7 +200,7 @@ const posts = [
   },
   {
     title: "Épuisé à 15 h ? La sagesse millénaire des dauphins pour vaincre la fatigue mentale",
-    file: "./blog/theme-astral-stress",
+    file: "./blog/dauphins",
     excerpt: "Et si vous adoptiez la technique de sommeil des dauphins pour optimiser votre énergie tout au long de la journée ?",
     date: "",
     author: "",
@@ -321,7 +321,7 @@ const posts = [
   },
   {
     title: "🌱 Les super-aliments créoles",
-    file: "./blog/identite-heroique-stress",
+    file: "./blog/superaliments",
     excerpt: "Votre arsenal nutritionnel pour une vitalité optimale",
     date: "",
     author: "",

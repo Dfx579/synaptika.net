@@ -6,3 +6,33 @@
   from = "/blog/*"
   to = "/blog/:splat"
   status = 200
+
+[[redirects]]
+  from = "/Epsom.html"
+  to = "/blog/Epsom.html"
+  status = 301
+
+[[redirects]]
+  from = "/Laotseu.html"
+  to = "/blog/Laotseu.html"
+  status = 301
+
+[[redirects]]
+  from = "/leonard"
+  to = "/blog/leonard-de-vinci.html"
+  status = 301
+
+[[redirects]]
+  from = "/super-aliments-creoles"
+  to = "/blog/superaliments.html"
+  status = 301
+
+[[redirects]]
+  from = "/education-au-japon"
+  to = "/blog/revolution-cantine-japon.html"
+  status = 301
+
+[[redirects]]
+  from = "/consequencespositivesnegatives"
+  to = "/blog"
+  status = 301

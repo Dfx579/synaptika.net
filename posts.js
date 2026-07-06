@@ -421,3 +421,7 @@ const posts = [
 ];
 
 console.log("posts.js chargé avec succès !", posts.length, "articles");
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = posts;
+}

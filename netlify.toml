@@ -1,6 +1,6 @@
 [build]
   publish = "."
-  command = "echo 'Site statique pur'"
+  command = "node generate-static-blog.js"
 
 [[redirects]]
   from = "/blog/*"

@@ -13,6 +13,11 @@ function resolveFile(file) {
   return file.endsWith('.html') ? file : file + '.html';
 }
 
+function canonicalUrl(file) {
+  const clean = file.replace(/^\.\//, '').replace(/\.html$/i, '').toLowerCase();
+  return `${SITE_URL}/${clean}`;
+}
+
 let updated = 0;
 let skipped = 0;
 
@@ -27,12 +32,18 @@ posts.forEach(post => {
   }
 
   let html = fs.readFileSync(filePath, 'utf8');
+  const pageUrl = canonicalUrl(post.file);
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": post.title,
     "description": post.excerpt,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": pageUrl
+    },
+    "url": pageUrl,
     "author": {
       "@type": "Person",
       "name": post.author && post.author.trim() ? post.author : DEFAULT_AUTHOR,

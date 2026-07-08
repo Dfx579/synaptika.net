@@ -288,7 +288,7 @@ const posts = [
   },
   {
     title: "L'Alliance du Tai Ji Chuan et du Qi Gong",
-    file: "./blog/tai-ji-qi-gong",
+    file: "./blog/qi-gong-tai-chi",
     excerpt: "Une synergie de mouvement et d'énergie pour une santé optimale",
     date: "",
     author: "",

@@ -9,7 +9,7 @@ const posts = [
     reads: "15 min",
     image: "./blog/images/5-elements-assiette.jpg",
     tags: ["5Éléments", "Tao", "CuisineCreole", "Martinique", "Émotions"],
-    category: "Nutrition"
+    category: "Nutrition créole"
   },
   {
     title: "🌿 Comment optimiser votre pratique de l'EFT ?",
@@ -20,7 +20,7 @@ const posts = [
     reads: "10 min",
     image: "./blog/images/image-optimisee-eft-meridiens.jpg",
     tags: ["EFT", "Tapping", "Méridiens", "Énergétique", "Bien-être"],
-    category: "Techniques énergétiques"
+    category: "Bien-être holistique"
   },
   {
     title: "Igname, Manioc, Patate Douce : Ce que Votre Grand-Mère Savait Déjà",
@@ -30,8 +30,8 @@ const posts = [
     author: "Thierry FELICIA",
     reads: "8 min",
     image: "./blog/images/igname-manioc-patate-douce.jpg",
-    tags: ["Nutrition", "Bien-être", "CuisineAntillaise", "AntiStress"],
-    category: "Nutrition"
+    tags: ["Nutrition créole", "Bien-être", "CuisineAntillaise", "AntiStress"],
+    category: "Nutrition créole"
   },
   {
     title: "🛑 Pourquoi plus vous travaillez dur sous pression, plus vous sabotez vos résultats : Le piège de l'identité héroïque",
@@ -63,8 +63,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/smoothie.webp",
-    tags: ["Nutrition", "Bien-être", "Martinique Nature", "Libération stress"],
-    category: "Nutrition"
+    tags: ["Nutrition créole", "Bien-être", "Martinique Nature", "Libération stress"],
+    category: "Nutrition créole"
   },
   {
     title: "Ce que votre miroir sait de vous — et que vous ne regardez plus",
@@ -108,7 +108,7 @@ const posts = [
     reads: "",
     image: "./blog/image/tai-chi-maitre-ballerine-chef-orchestre-harmonie.webp",
     tags: ["Bien-être", "Tai Ji Chuan", "Qi Gong"],
-    category: "Techniques énergétiques"
+    category: "Bien-être holistique"
   },
   {
     title: "Ce que votre grand-mère savait que Google ne sait pas",
@@ -119,7 +119,7 @@ const posts = [
     reads: "",
     image: "./blog/image/rimed-razie.webp",
     tags: ["Bien-être", "Rimèd Razié", "Martinique Nature"],
-    category: "Santé & Bien-être"
+    category: "Bien-être holistique"
   },
   {
     title: "Ces ressources que le stress a ensevelies — et comment les retrouver",
@@ -141,7 +141,7 @@ const posts = [
     reads: "",
     image: "./blog/image/ruelle-de-quartier-populaire.webp",
     tags: ["Japon", "Bien-être"],
-    category: "Histoire & Inspiration"
+    category: "Sagesses & Inspiration"
   },
   {
     title: "Transformez votre quotidien en 10 minutes par jour : le pouvoir des micro-évolutions",
@@ -163,7 +163,7 @@ const posts = [
     reads: "",
     image: "./blog/image/essence.webp",
     tags: ["Développement personnel", "Essences florales", "Yi King"],
-    category: "Techniques énergétiques"
+    category: "Bien-être holistique"
   },
   {
     title: "La synergie aromatique qui crée une pause mentale en quelques instants",
@@ -174,7 +174,7 @@ const posts = [
     reads: "",
     image: "./blog/image/aromatherapie-efficace.webp",
     tags: ["Libération stress", "Aromathérapie efficace"],
-    category: "Santé & Bien-être"
+    category: "Bien-être holistique"
   },
   {
     title: "Votre ordinateur devrait être un miroir, pas un placard",
@@ -196,7 +196,7 @@ const posts = [
     reads: "",
     image: "./blog/image/Epsom.webp",
     tags: ["Santé", "Histoire", "Bien-être"],
-    category: "Histoire & Inspiration"
+    category: "Sagesses & Inspiration"
   },
   {
     title: "Épuisé à 15 h ? La sagesse millénaire des dauphins pour vaincre la fatigue mentale",
@@ -218,7 +218,7 @@ const posts = [
     reads: "",
     image: "./blog/image/3-2.png",
     tags: ["Nature", "Innovation"],
-    category: "Histoire & Inspiration"
+    category: "Sagesses & Inspiration"
   },
   {
     title: "Maîtrisez colère, tristesse et injustice : guide inspiré de Lao Tseu et Bouddha ✨",
@@ -239,8 +239,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/eau.webp",
-    tags: ["Santé", "Nutrition", "Hydratation"],
-    category: "Nutrition"
+    tags: ["Santé", "Nutrition créole", "Hydratation"],
+    category: "Nutrition créole"
   },
   {
     title: "La NST Bowen : une solution révolutionnaire pour les manutentionnaires face aux TMS 💪",
@@ -251,7 +251,7 @@ const posts = [
     reads: "",
     image: "./blog/image/Bowen.webp",
     tags: ["Santé", "NST Bowen"],
-    category: "Thérapies corporelles"
+    category: "Bien-être holistique"
   },
   {
     title: "🧠 Comment les 'pourquoi' restreignent les capacités de votre cerveau",
@@ -273,7 +273,7 @@ const posts = [
     reads: "",
     image: "./blog/image/Bowen.webp",
     tags: ["Santé", "NST Bowen"],
-    category: "Thérapies corporelles"
+    category: "Bien-être holistique"
   },
   {
     title: "L'Intuition : Votre précieux allié pour une vie épanouie",
@@ -295,7 +295,7 @@ const posts = [
     reads: "",
     image: "./blog/image/yin-yang-tai-ji.webp",
     tags: ["Tai Ji Chuan", "Qi Gong", "Santé"],
-    category: "Techniques énergétiques"
+    category: "Bien-être holistique"
   },
   {
     title: "De l'ombre à la lumière : L'ascension d'un homme hors du commun",
@@ -306,7 +306,7 @@ const posts = [
     reads: "",
     image: "./blog/image/ombre-lumiere.png",
     tags: ["Développement personnel"],
-    category: "Histoire & Inspiration"
+    category: "Sagesses & Inspiration"
   },
   {
     title: "Le code des graines germées",
@@ -316,8 +316,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/grainesgermees.png",
-    tags: ["Santé", "Nutrition"],
-    category: "Nutrition"
+    tags: ["Santé", "Nutrition créole"],
+    category: "Nutrition créole"
   },
   {
     title: "🌱 Les super-aliments créoles",
@@ -327,8 +327,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/super-aliments.webp",
-    tags: ["Santé", "Nutrition"],
-    category: "Nutrition"
+    tags: ["Santé", "Nutrition créole"],
+    category: "Nutrition créole"
   },
   {
     title: "Découvrez les bienfaits du Touch for Health®",
@@ -338,8 +338,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/TFH.png",
-    tags: ["Santé", "Nutrition"],
-    category: "Thérapies corporelles"
+    tags: ["Santé", "Nutrition créole"],
+    category: "Bien-être holistique"
   },
   {
     title: "Léonard de Vinci",
@@ -350,7 +350,7 @@ const posts = [
     reads: "",
     image: "./blog/image/leonard-de-vinci.mp4",
     tags: ["Histoire", "Développement personnel"],
-    category: "Histoire & Inspiration"
+    category: "Sagesses & Inspiration"
   },
   {
     title: "Trouvez la sérénité en méditant avec les arbres",
@@ -361,7 +361,7 @@ const posts = [
     reads: "",
     image: "./blog/image/meditation-arbres.png",
     tags: ["Techniques", "Énergie"],
-    category: "Techniques énergétiques"
+    category: "Bien-être holistique"
   },
   {
     title: "L'Alimentation saine et le sport",
@@ -371,8 +371,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/alimentation-sport.mp4",
-    tags: ["Santé", "Nutrition", "Hydratation"],
-    category: "Nutrition"
+    tags: ["Santé", "Nutrition créole", "Hydratation"],
+    category: "Nutrition créole"
   },
   {
     title: "Explorez votre génie intérieur",
@@ -393,8 +393,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/revolution-cantine-japon.webp",
-    tags: ["Santé", "Nutrition", "Alimentation"],
-    category: "Nutrition"
+    tags: ["Santé", "Nutrition créole", "Alimentation"],
+    category: "Nutrition créole"
   },
   {
     title: "Résilience : 3 Forces cachées pour transformer votre passé douloureux selon la sagesse ancienne",
@@ -416,7 +416,7 @@ const posts = [
     reads: "",
     image: "./blog/image/passe-avenir.webp",
     tags: ["Développement personnel", "Transformation", "Résilience"],
-    category: "Santé & Bien-être"
+    category: "Bien-être holistique"
   }
 ];
 

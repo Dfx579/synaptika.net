@@ -5,17 +5,26 @@ echo "================================================"
 
 ERRORS=0
 
-# 1. Vérification des liens avec lychee (mode pragmatique)
-echo -e "
-📌 Checking links..."
+# 1. Vérification des liens avec lychee (mode simple)
+echo -e "\n📌 Checking links..."
 if command -v lychee &> /dev/null; then
-    # On ignore les liens absolus et on se concentre sur les fichiers manquants
-    lychee --no-progress         --accept '200,204,301,302,403,404,429'         --exclude-path 'google'         --exclude 'at://.*'         --exclude 'accounts.google.com'         --exclude 'bsky.app'         --exclude 'pinterest.com'         --exclude '^file:///[^/]+$'         --exclude '^file:///home/nyp7/[^/]+$'         './**/*.html' 2>&1 | grep -E '(File not found|ERROR.*file://)' | grep -v 'Cannot resolve root-relative'
-
-    if [ ${PIPESTATUS[0]} -ne 0 ]; then
+    # Lancer lychee et capturer la sortie
+    OUTPUT=$(lychee --no-progress \
+        --accept '200,204,301,302,403,404,429' \
+        --exclude-path 'google' \
+        --exclude 'at://.*' \
+        --exclude 'accounts.google.com' \
+        --exclude 'bsky.app' \
+        --exclude 'pinterest.com' \
+        './**/*.html' 2>&1)
+    
+    # Filtrer uniquement les vrais fichiers manquants
+    MISSING=$(echo "$OUTPUT" | grep -E 'File not found' | grep -v 'Cannot resolve root-relative')
+    
+    if [ -n "$MISSING" ]; then
+        echo "$MISSING"
         ERRORS=$((ERRORS + 1))
-        echo -e "
-❌ Some files are missing"
+        echo -e "\n❌ Some files are missing"
     else
         echo -e "✅ All files are valid"
     fi
@@ -24,8 +33,7 @@ else
 fi
 
 # 2. Vérification HTML
-echo -e "
-🔧 Checking HTML structure..."
+echo -e "\n🔧 Checking HTML structure..."
 while IFS= read -r -d '' file; do
     if [[ "$file" == *"google"* ]] || [[ "$file" == *"pageconstruction"* ]]; then
         continue
@@ -41,10 +49,11 @@ while IFS= read -r -d '' file; do
 done < <(find . -maxdepth 3 -name "*.html" -type f -print0)
 
 # 3. Résumé
-echo -e "
-================================================"
+echo -e "\n================================================"
 if [ $ERRORS -eq 0 ]; then
     echo "✅ All checks passed! Ready to commit."
+    exit 0
 else
     echo "❌ Found $ERRORS critical error(s)."
+    exit 1
 fi

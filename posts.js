@@ -417,6 +417,95 @@ const posts = [
     image: "./blog/image/passe-avenir.webp",
     tags: ["Développement personnel", "Transformation", "Résilience"],
     category: "Bien-être holistique"
+  },
+
+  {
+    title: "L'Approche Synaptika: comment votre corps sait déjà retrouver son équilibre",
+    file: "./blog/approche-synaptika",
+    excerpt: "Découvrez l'Approche Synaptika, une méthode unique en Martinique centrée sur la NST Bowen pour retrouver votre équilibre naturel.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "6 min",
+    image: "./blog/images/approche-synaptika.jpg",
+    tags: ["NST Bowen Martinique", "développement personnel", "bien-être Martinique", "système nerveux", "équilibre naturel", "Synaptika"],
+    category: "Développement personnel"
+  },
+  {
+    title: "Comment se déroule une séance de NST Bowen en Martinique: le guide complet",
+    file: "./blog/deroulement-seance-nst",
+    excerpt: "Le guide complet pour votre première séance de NST Bowen en Martinique: déroulement, préparation, sensations et conseils pratiques.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "4 min",
+    image: "./blog/images/deroulement-seance-nst.jpg",
+    tags: ["NST Bowen séance", "première séance Martinique", "déroulement NST", "préparation séance bien-être", "contre-indications NST"],
+    category: "Bien-être holistique"
+  },
+  {
+    title: "NST Bowen et gestion du stress: comment votre corps peut retrouver son calme naturellement",
+    file: "./blog/nst-gestion-stress",
+    excerpt: "Comment la NST Bowen aide votre système nerveux à retrouver son calme naturellement. Mécanismes, bienfaits et conseils pratiques.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "5 min",
+    image: "./blog/images/nst-gestion-stress.jpg",
+    tags: ["NST Bowen stress", "gestion du stress Martinique", "système nerveux", "détente naturelle 972", "stress chronique"],
+    category: "Bien-être holistique"
+  },
+  {
+    title: "Les sensations après une séance de NST Bowen: ce qu'il faut savoir",
+    file: "./blog/sensations-apres-seance",
+    excerpt: "Découvrez ce qu'il est normal de ressentir après une séance de NST Bowen et comment accompagner votre corps dans le processus d'intégration.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "4 min",
+    image: "./blog/images/sensations-apres-seance.jpg",
+    tags: ["après séance NST", "sensations NST Bowen", "intégration corps", "réactions post-séance", "récupération bien-être"],
+    category: "Bien-être holistique"
+  },
+  {
+    title: "Combien de séances de NST Bowen sont nécessaires? Le guide complet",
+    file: "./blog/combien-seances-nst",
+    excerpt: "Découvrez combien de séances de NST Bowen sont réellement nécessaires selon votre situation. Parcours typique et conseils pratiques.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "5 min",
+    image: "./blog/images/combien-seances-nst.jpg",
+    tags: ["nombre séances NST Bowen", "fréquence séances Martinique", "parcours NST", "durée accompagnement bien-être", "suivi NST"],
+    category: "Bien-être holistique"
+  },
+  {
+    title: "NST Bowen et sommeil: comment retrouver des nuits réparatrices naturellement",
+    file: "./blog/nst-sommeil",
+    excerpt: "Découvrez comment la NST Bowen aide à retrouver un sommeil réparateur en Martinique. Solutions naturelles contre l'insomnie.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "5 min",
+    image: "./blog/images/nst-sommeil.jpg",
+    tags: ["NST Bowen sommeil", "insomnie Martinique", "troubles du sommeil 972", "sommeil réparateur naturel", "mieux dormir sans médicaments"],
+    category: "Bien-être holistique"
+  },
+  {
+    title: "Le mensonge du Lâcher Prise: pourquoi votre cerveau refuse de vous détendre",
+    file: "./blog/lacher-prise",
+    excerpt: "Vous n'arrivez pas à lâcher prise? Votre cerveau a besoin de signaux PHYSIQUES, pas mentaux. Découvrez le protocole somatique en 2 minutes.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "5 min",
+    image: "./blog/images/lacher-prise.jpg",
+    tags: ["lâcher prise", "stress chronique", "système nerveux autonome", "approche somatique", "gestion du stress"],
+    category: "Développement personnel"
+  },
+  {
+    title: "Pourquoi les hiboux ne burnoutent jamais: la loi circadienne",
+    file: "./blog/rythmes-circadiens-hiboux",
+    excerpt: "Vous forcez à 22h et êtes épuisé à 10h? Découvrez la loi circadienne que les entrepreneurs ignorent et le Rythme du Hibou.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "5 min",
+    image: "./blog/images/rythmes-circadiens-hiboux.jpg",
+    tags: ["rythme circadien", "productivité", "burn-out", "chronobiologie", "énergie"],
+    category: "Productivité"
   }
 ];
 

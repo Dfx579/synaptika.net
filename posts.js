@@ -492,7 +492,7 @@ const posts = [
     date: "2026-07-12",
     author: "Thierry Felicia",
     reads: "5 min",
-    image: "./blog/images/lacher-prise.jpg",
+    image: "./blog/images/lacher-prise.svg",
     tags: ["lâcher prise", "stress chronique", "système nerveux autonome", "approche somatique", "gestion du stress"],
     category: "Développement personnel"
   },
@@ -503,7 +503,7 @@ const posts = [
     date: "2026-07-12",
     author: "Thierry Felicia",
     reads: "5 min",
-    image: "./blog/images/rythmes-circadiens-hiboux.jpg",
+    image: "./blog/images/rythmes-circadiens-hiboux.svg",
     tags: ["rythme circadien", "productivité", "burn-out", "chronobiologie", "énergie"],
     category: "Productivité"
   }

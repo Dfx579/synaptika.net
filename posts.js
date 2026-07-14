@@ -437,7 +437,7 @@ const posts = [
     date: "2026-07-12",
     author: "Thierry Felicia",
     reads: "4 min",
-    image: "./blog/images/deroulement-seance-nst.jpg",
+    image: "./blog/images/deroulement-seance-nst.svg",
     tags: ["NST Bowen séance", "première séance Martinique", "déroulement NST", "préparation séance bien-être", "contre-indications NST"],
     category: "Bien-être holistique"
   },
@@ -459,7 +459,7 @@ const posts = [
     date: "2026-07-12",
     author: "Thierry Felicia",
     reads: "4 min",
-    image: "./blog/images/sensations-apres-seance.svg",
+    image: "./blog/images/sensations-apres-seance.jpg",
     tags: ["après séance NST", "sensations NST Bowen", "intégration corps", "réactions post-séance", "récupération bien-être"],
     category: "Bien-être holistique"
   },

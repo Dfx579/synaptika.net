@@ -756,15 +756,10 @@ footer h3 {
   color: var(--color-gray-700);
 }
 
-/* === FIX: Alignement des boutons Lire la suite === */
-.post-card {
-}
-.post-footer {
 }
 
-
-/* === FIX: Alignement des boutons Lire la suite === */
-.post-card {
+/* === FIX FINAL: Alignement des boutons Lire la suite (cible .post) === */
+.post {
   display: flex !important;
   flex-direction: column !important;
   height: 100% !important;

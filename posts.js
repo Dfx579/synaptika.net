@@ -459,7 +459,7 @@ const posts = [
     date: "2026-07-12",
     author: "Thierry Felicia",
     reads: "4 min",
-    image: "./blog/images/sensations-apres-seance.jpg",
+    image: "./blog/images/sensations-apres-seance.svg",
     tags: ["après séance NST", "sensations NST Bowen", "intégration corps", "réactions post-séance", "récupération bien-être"],
     category: "Bien-être holistique"
   },
@@ -503,7 +503,7 @@ const posts = [
     date: "2026-07-12",
     author: "Thierry Felicia",
     reads: "5 min",
-    image: "./blog/images/rythmes-circadiens-hiboux.svg",
+    image: "./blog/images/rythmes-circadiens-hiboux.jpg",
     tags: ["rythme circadien", "productivité", "burn-out", "chronobiologie", "énergie"],
     category: "Productivité"
   }

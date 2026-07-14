@@ -755,3 +755,20 @@ footer h3 {
   font-size: 0.9rem;
   color: var(--color-gray-700);
 }
+
+/* === FIX: Alignement des boutons Lire la suite === */
+.post-card {
+}
+.post-footer {
+}
+
+
+/* === FIX: Alignement des boutons Lire la suite === */
+.post-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+.post-footer {
+  margin-top: auto !important;
+}

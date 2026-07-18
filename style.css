@@ -755,3 +755,57 @@ footer h3 {
   font-size: 0.9rem;
   color: var(--color-gray-700);
 }
+
+}
+
+/* === FIX FINAL: Alignement des boutons Lire la suite (cible .post) === */
+.post {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+.post-footer {
+  margin-top: auto !important;
+}
+
+/* === ALIGNEMENT BOUTONS LIRE LA SUITE (SOLUTION ULTIME) === */
+/* Force la grille à étirer toutes les cartes à la même hauteur */
+.blog-grid {
+  display: grid !important;
+  align-items: stretch !important;
+}
+
+/* Force chaque carte à prendre toute la hauteur et à être en flex column */
+.post {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  flex: 1 1 auto !important;
+}
+
+/* Pousse le footer (et donc le bouton) tout en bas de la carte étirée */
+.post-footer {
+  margin-top: auto !important;
+  padding-top: 1rem !important;
+}
+
+/* === ALIGNEMENT BOUTONS LIRE LA SUITE (SOLUTION ULTIME) === */
+/* Force la grille à étirer toutes les cartes à la même hauteur */
+.blog-grid {
+  display: grid !important;
+  align-items: stretch !important;
+}
+
+/* Force chaque carte à prendre toute la hauteur et à être en flex column */
+.post {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  flex: 1 1 auto !important;
+}
+
+/* Pousse le footer (et donc le bouton) tout en bas de la carte étirée */
+.post-footer {
+  margin-top: auto !important;
+  padding-top: 1rem !important;
+}

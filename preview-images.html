@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Apercu des images du site Synaptika.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prévisualisation des images - Synaptika</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 40px 20px;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #7f21f3;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card-title {
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            border-top: 3px solid #7f21f3;
+        }
+        .info {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 40px auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .info h2 {
+            color: #7f21f3;
+            margin-top: 0;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta button {
+            background: #7f21f3;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        .cta button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(127,33,243,0.4);
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Prévisualisation des images d'articles</h1>
+    <p class="subtitle">8 images générées pour les nouveaux articles Synaptika</p>
+    
+    <div class="grid">
+
+        <div class="card">
+            <img src="./blog/images/approche-synaptika.svg" alt="L'Approche Synaptika">
+            <div class="card-title">L'Approche Synaptika<br><small style="color: #666; font-weight: normal;">Équilibre naturel & NST Bowen</small></div>
+        </div>
+
+        <div class="card">
+            <img src="./blog/images/deroulement-seance-nst.svg" alt="Déroulement d'une séance">
+            <div class="card-title">Déroulement d'une séance<br><small style="color: #666; font-weight: normal;">Guide complet NST Bowen</small></div>
+        </div>
+
+        <div class="card">
+            <img src="./blog/images/nst-gestion-stress.svg" alt="NST Bowen & Gestion du Stress">
+            <div class="card-title">NST Bowen & Gestion du Stress<br><small style="color: #666; font-weight: normal;">Retrouver son calme naturellement</small></div>
+        </div>
+
+        <div class="card">
+            <img src="./blog/images/sensations-apres-seance.svg" alt="Sensations après une séance">
+            <div class="card-title">Sensations après une séance<br><small style="color: #666; font-weight: normal;">Ce qu'il faut savoir</small></div>
+        </div>
+
+        <div class="card">
+            <img src="./blog/images/combien-seances-nst.svg" alt="Combien de séances ?">
+            <div class="card-title">Combien de séances ?<br><small style="color: #666; font-weight: normal;">Planifier votre parcours</small></div>
+        </div>
+
+        <div class="card">
+            <img src="./blog/images/nst-sommeil.svg" alt="NST Bowen & Sommeil">
+            <div class="card-title">NST Bowen & Sommeil<br><small style="color: #666; font-weight: normal;">Nuits réparatrices</small></div>
+        </div>
+
+        <div class="card">
+            <img src="./blog/images/lacher-prise.svg" alt="Le mensonge du Lâcher Prise">
+            <div class="card-title">Le mensonge du Lâcher Prise<br><small style="color: #666; font-weight: normal;">Protocole somatique 2 min</small></div>
+        </div>
+
+        <div class="card">
+            <img src="./blog/images/rythmes-circadiens-hiboux.svg" alt="Pourquoi les hiboux">
+            <div class="card-title">Pourquoi les hiboux<br><small style="color: #666; font-weight: normal;">ne burnoutent jamais</small></div>
+        </div>
+
+    </div>
+    
+    <div class="info">
+        <h2>📋 Caractéristiques des images</h2>
+        <ul>
+            <li><strong>Format :</strong> SVG (vectoriel, qualité parfaite)</li>
+            <li><strong>Dimensions :</strong> 1200 x 630 pixels (format Open Graph optimal)</li>
+            <li><strong>Dégradé :</strong> Violet (#7f21f3) vers Bleu (#0b5394)</li>
+            <li><strong>Style :</strong> Professionnel, moderne, aligné avec l'identité Synaptika</li>
+        </ul>
+    </div>
+    
+    <div class="cta">
+        <p><strong>Ces images te conviennent-elles ?</strong></p>
+        <p>Si oui, tu peux maintenant publier les articles avec ces images.</p>
+        <button onclick="alert('Ouvre ton terminal et lance : git add . && git commit -m "Publier 8 articles" && git push')">✅ Oui, je publie !</button>
+        <button onclick="alert('Modifie le script Python pour changer les couleurs ou le texte des SVG')">✏️ Non, je veux modifier</button>
+    </div>
+</body>
+</html>

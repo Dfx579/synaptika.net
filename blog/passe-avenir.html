@@ -158,8 +158,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             p, .toc li { font-size: 16px; }
         }
     </style>
+<!-- ARTICLE_SCHEMA_START -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Passé et avenir : Comment vos héritages façonnent votre bien-être",
+  "description": "Une sagesse inspirée de la nature",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://synaptika.net/blog/passe-avenir"
+  },
+  "url": "https://synaptika.net/blog/passe-avenir",
+  "author": {
+    "@type": "Person",
+    "name": "Thierry Felicia",
+    "url": "https://synaptika.net/apropos.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Synaptika",
+    "url": "https://synaptika.net"
+  },
+  "datePublished": "",
+  "dateModified": "",
+  "image": "https://synaptika.net/blog/image/passe-avenir.webp",
+  "keywords": "Développement personnel, Transformation, Résilience",
+  "articleSection": "Bien-être holistique",
+  "inLanguage": "fr-MQ"
+}
+</script>
+<!-- ARTICLE_SCHEMA_END -->
+<style>
+.cookie-banner {
+    position: fixed; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.95);
+    color: white; padding: 25px; text-align: center; z-index: 10000;
+    transform: translateY(100%); transition: transform 0.4s ease-out; backdrop-filter: blur(15px);
+    font-size: 15px;
+}
+.cookie-banner.show { transform: translateY(0); }
+.cookie-buttons { display: flex; gap: 15px; justify-content: center; margin-top: 20px; flex-wrap: wrap; }
+.cookie-btn { padding: 14px 28px; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 15px; transition: all 0.3s; min-width: 120px; }
+.cookie-accept { background: #28a745; color: white; }
+.cookie-decline { background: #6c757d; color: white; }
+.cookie-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+</style>
 </head>
 <body>
+<div class="cookie-banner" id="cookieBanner">
+    <div>🍪 Ce site utilise des cookies pour améliorer votre expérience. <a href="#" style="color:#87ceeb;">En savoir plus</a></div>
+    <div class="cookie-buttons">
+        <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accepter</button>
+        <button class="cookie-btn cookie-decline" onclick="declineCookies()">Refuser</button>
+    </div>
+</div>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZXHJFPV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -358,6 +410,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             });
         });
     </script>
+<script>
+function initCookies() {
+    if (!localStorage.getItem('cookiesAccepted')) {
+        setTimeout(() => document.getElementById('cookieBanner').classList.add('show'), 2000);
+    }
+}
+function acceptCookies() { localStorage.setItem('cookiesAccepted', 'true'); document.getElementById('cookieBanner').classList.remove('show'); }
+function declineCookies() { localStorage.setItem('cookiesAccepted', 'false'); document.getElementById('cookieBanner').classList.remove('show'); }
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initCookies); else initCookies();
+</script>
 </body>
 </html>
 <p><em>Les approches et contenus proposés sur ce site s'inscrivent exclusivement dans une démarche de bien-être personnel et de développement des ressources naturelles. Ils ne constituent en aucun cas un diagnostic, un traitement ou une prescription médicale, et ne se substituent à aucun suivi médical en cours. En cas de problème de santé, consultez systématiquement un professionnel de santé qualifié.</em></p>

@@ -1,5 +1,75 @@
 [
   {
+    "title": "Fatigue persistante : et si ce n'etait pas dans votre tete ?",
+    "file": "./blog/fatigue-persistante.html",
+    "excerpt": "Vous dormez, mais vous ne recuperez pas.",
+    "date": "2026-07-14",
+    "author": "Thierry Felicia",
+    "reads": "5 min",
+    "image": "./blog/images/fatigue-persistante.jpg",
+    "tags": [
+      "Fatigue",
+      "Stress",
+      "Bien-etre"
+    ]
+  },
+  {
+    "title": "Burn-out ou simple fatigue : comment faire la difference ?",
+    "file": "./blog/burnout-ou-fatigue.html",
+    "excerpt": "Le repos ne recupere plus, la motivation s'erode.",
+    "date": "2026-07-14",
+    "author": "Thierry Felicia",
+    "reads": "6 min",
+    "image": "./blog/images/burnout-ou-fatigue.jpg",
+    "tags": [
+      "Burn-out",
+      "Fatigue",
+      "Sante"
+    ]
+  },
+  {
+    "title": "Pourquoi je n'arrive pas a me reposer meme quand j'en ai le temps",
+    "file": "./blog/pourquoi-pas-se-reposer.html",
+    "excerpt": "Le week-end est la, mais votre tete tourne encore.",
+    "date": "2026-07-14",
+    "author": "Thierry Felicia",
+    "reads": "5 min",
+    "image": "./blog/images/pourquoi-pas-se-reposer.jpg",
+    "tags": [
+      "Repos",
+      "Stress",
+      "Bien-etre"
+    ]
+  },
+  {
+    "title": "Pourquoi les hiboux ne burnoutent jamais : la loi circadienne",
+    "file": "./blog/rythmes-circadiens-hiboux.html",
+    "excerpt": "Le hibou suit son horloge biologique. La loi circadienne et votre energie.",
+    "date": "2026-07-14",
+    "author": "Thierry Felicia",
+    "reads": "6 min",
+    "image": "./blog/images/rythmes-circadiens-hiboux.jpg",
+    "tags": [
+      "Sommeil",
+      "Rythme circadien",
+      "Bien-etre"
+    ]
+  },
+  {
+    "title": "Stress chronique : 5 signaux que votre corps vous envoie (et que vous ignorez)",
+    "file": "./blog/stress-chronique-signaux.html",
+    "excerpt": "Tensions, fatigue, irritabilite... Ces 5 signaux physiques sont souvent les premiers signes d'un stress chronique installe. Apprenez a les reconnaitre.",
+    "date": "2026-07-14",
+    "author": "Thierry Felicia",
+    "reads": "5 min",
+    "image": "./blog/images/stress-chronique-signaux.jpg",
+    "tags": [
+      "Stress",
+      "Bien-etre",
+      "Sante"
+    ]
+  },
+  {
     "title": "Du petit village d'Epsom à votre salle de bain : l'histoire fascinante d'un rituel de détente ancestral",
     "file": "./Epsom.html",
     "excerpt": "Découvrez l'histoire fascinante du sel d'Epsom et ses bienfaits méconnus pour votre bien-être quotidien.",
@@ -7,7 +77,11 @@
     "author": "",
     "reads": "",
     "image": "./images/Epsom6%281%29.png",
-    "tags": ["Santé", "Histoire", "Bien-être"]
+    "tags": [
+      "Santé",
+      "Histoire",
+      "Bien-être"
+    ]
   },
   {
     "title": "Épuisé à 15 h ? La sagesse millénaire des dauphins pour vaincre la fatigue mentale",
@@ -17,7 +91,11 @@
     "author": "",
     "reads": "",
     "image": "./images/dauphin.png",
-    "tags": ["Productivité", "Sommeil", "Santé"]
+    "tags": [
+      "Productivité",
+      "Sommeil",
+      "Santé"
+    ]
   },
   {
     "title": "Le médecin qui a tout quitté pour écouter les fleurs 🌸",
@@ -27,7 +105,10 @@
     "author": "",
     "reads": "",
     "image": "./images/3-2.png",
-    "tags": ["Nature", "Innovation"]
+    "tags": [
+      "Nature",
+      "Innovation"
+    ]
   },
   {
     "title": "Maîtrisez colère, tristesse et injustice : guide inspiré de Lao Tseu et Bouddha ✨",
@@ -37,7 +118,11 @@
     "author": "",
     "reads": "",
     "image": "./images/trois-sagesses.png",
-    "tags": ["Développement personnel", "Transformation", "Résilience"]
+    "tags": [
+      "Développement personnel",
+      "Transformation",
+      "Résilience"
+    ]
   },
   {
     "title": "L'eau pure, source vitale d'hydratation et de santé optimale 💧",
@@ -47,7 +132,11 @@
     "author": "",
     "reads": "",
     "image": "./images/eau.png",
-    "tags": ["Santé", "Nutrition", "Hydratation"]
+    "tags": [
+      "Santé",
+      "Nutrition",
+      "Hydratation"
+    ]
   },
   {
     "title": "La NST Bowen : une solution révolutionnaire pour les manutentionnaires face aux TMS 💪",
@@ -57,7 +146,10 @@
     "author": "",
     "reads": "",
     "image": "./images/Bowen.png",
-    "tags": ["Santé", "NST Bowen"]
+    "tags": [
+      "Santé",
+      "NST Bowen"
+    ]
   },
   {
     "title": "🧠 Comment les 'pourquoi' restreignent les capacités de votre cerveau",
@@ -67,7 +159,11 @@
     "author": "",
     "reads": "",
     "image": "./images/cerveau.png",
-    "tags": ["Développement personnel", "Transformation", "Neurosciences"]
+    "tags": [
+      "Développement personnel",
+      "Transformation",
+      "Neurosciences"
+    ]
   },
   {
     "title": "La NST Bowen : Une solution naturelle contre les douleurs du quotidien",
@@ -77,7 +173,10 @@
     "author": "",
     "reads": "",
     "image": "./images/Bowen.png",
-    "tags": ["Santé", "NST Bowen"]
+    "tags": [
+      "Santé",
+      "NST Bowen"
+    ]
   },
   {
     "title": "L'Intuition : Votre précieux allié pour une vie épanouie",
@@ -87,7 +186,9 @@
     "author": "",
     "reads": "",
     "image": "./images/intuition.png",
-    "tags": ["Développement personnel"]
+    "tags": [
+      "Développement personnel"
+    ]
   },
   {
     "title": "De l'ombre à la lumière : L'ascension d'un homme hors du commun",
@@ -97,7 +198,9 @@
     "author": "",
     "reads": "",
     "image": "./images/ombre-lumiere.png",
-    "tags": ["Développement personnel"]
+    "tags": [
+      "Développement personnel"
+    ]
   },
   {
     "title": "Le code des graines germées",
@@ -107,7 +210,10 @@
     "author": "",
     "reads": "",
     "image": "./images/grainesgermees.png",
-    "tags": ["Santé", "Nutrition"]
+    "tags": [
+      "Santé",
+      "Nutrition"
+    ]
   },
   {
     "title": "🌱 Les super-aliments créoles",
@@ -117,7 +223,10 @@
     "author": "",
     "reads": "",
     "image": "./images/super-aliment.png",
-    "tags": ["Santé", "Nutrition"]
+    "tags": [
+      "Santé",
+      "Nutrition"
+    ]
   },
   {
     "title": "Découvrez les bienfaits du Touch for Health®",
@@ -127,6 +236,9 @@
     "author": "",
     "reads": "",
     "image": "./images/TFH.png",
-    "tags": ["Santé", "Nutrition"]
+    "tags": [
+      "Santé",
+      "Nutrition"
+    ]
   }
 ]

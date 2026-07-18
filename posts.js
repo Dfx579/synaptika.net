@@ -9,7 +9,7 @@ const posts = [
     reads: "15 min",
     image: "./blog/images/5-elements-assiette.jpg",
     tags: ["5Éléments", "Tao", "CuisineCreole", "Martinique", "Émotions"],
-    category: "Nutrition"
+    category: "Nutrition créole"
   },
   {
     title: "🌿 Comment optimiser votre pratique de l'EFT ?",
@@ -20,7 +20,7 @@ const posts = [
     reads: "10 min",
     image: "./blog/images/image-optimisee-eft-meridiens.jpg",
     tags: ["EFT", "Tapping", "Méridiens", "Énergétique", "Bien-être"],
-    category: "Techniques énergétiques"
+    category: "Bien-être holistique"
   },
   {
     title: "Igname, Manioc, Patate Douce : Ce que Votre Grand-Mère Savait Déjà",
@@ -30,8 +30,8 @@ const posts = [
     author: "Thierry FELICIA",
     reads: "8 min",
     image: "./blog/images/igname-manioc-patate-douce.jpg",
-    tags: ["Nutrition", "Bien-être", "CuisineAntillaise", "AntiStress"],
-    category: "Nutrition"
+    tags: ["Nutrition créole", "Bien-être", "CuisineAntillaise", "AntiStress"],
+    category: "Nutrition créole"
   },
   {
     title: "🛑 Pourquoi plus vous travaillez dur sous pression, plus vous sabotez vos résultats : Le piège de l'identité héroïque",
@@ -63,8 +63,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/smoothie.webp",
-    tags: ["Nutrition", "Bien-être", "Martinique Nature", "Libération stress"],
-    category: "Nutrition"
+    tags: ["Nutrition créole", "Bien-être", "Martinique Nature", "Libération stress"],
+    category: "Nutrition créole"
   },
   {
     title: "Ce que votre miroir sait de vous — et que vous ne regardez plus",
@@ -108,7 +108,7 @@ const posts = [
     reads: "",
     image: "./blog/image/tai-chi-maitre-ballerine-chef-orchestre-harmonie.webp",
     tags: ["Bien-être", "Tai Ji Chuan", "Qi Gong"],
-    category: "Techniques énergétiques"
+    category: "Bien-être holistique"
   },
   {
     title: "Ce que votre grand-mère savait que Google ne sait pas",
@@ -119,7 +119,7 @@ const posts = [
     reads: "",
     image: "./blog/image/rimed-razie.webp",
     tags: ["Bien-être", "Rimèd Razié", "Martinique Nature"],
-    category: "Santé & Bien-être"
+    category: "Bien-être holistique"
   },
   {
     title: "Ces ressources que le stress a ensevelies — et comment les retrouver",
@@ -141,7 +141,7 @@ const posts = [
     reads: "",
     image: "./blog/image/ruelle-de-quartier-populaire.webp",
     tags: ["Japon", "Bien-être"],
-    category: "Histoire & Inspiration"
+    category: "Sagesses & Inspiration"
   },
   {
     title: "Transformez votre quotidien en 10 minutes par jour : le pouvoir des micro-évolutions",
@@ -163,7 +163,7 @@ const posts = [
     reads: "",
     image: "./blog/image/essence.webp",
     tags: ["Développement personnel", "Essences florales", "Yi King"],
-    category: "Techniques énergétiques"
+    category: "Bien-être holistique"
   },
   {
     title: "La synergie aromatique qui crée une pause mentale en quelques instants",
@@ -174,7 +174,7 @@ const posts = [
     reads: "",
     image: "./blog/image/aromatherapie-efficace.webp",
     tags: ["Libération stress", "Aromathérapie efficace"],
-    category: "Santé & Bien-être"
+    category: "Bien-être holistique"
   },
   {
     title: "Votre ordinateur devrait être un miroir, pas un placard",
@@ -196,7 +196,7 @@ const posts = [
     reads: "",
     image: "./blog/image/Epsom.webp",
     tags: ["Santé", "Histoire", "Bien-être"],
-    category: "Histoire & Inspiration"
+    category: "Sagesses & Inspiration"
   },
   {
     title: "Épuisé à 15 h ? La sagesse millénaire des dauphins pour vaincre la fatigue mentale",
@@ -218,7 +218,7 @@ const posts = [
     reads: "",
     image: "./blog/image/3-2.png",
     tags: ["Nature", "Innovation"],
-    category: "Histoire & Inspiration"
+    category: "Sagesses & Inspiration"
   },
   {
     title: "Maîtrisez colère, tristesse et injustice : guide inspiré de Lao Tseu et Bouddha ✨",
@@ -239,8 +239,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/eau.webp",
-    tags: ["Santé", "Nutrition", "Hydratation"],
-    category: "Nutrition"
+    tags: ["Santé", "Nutrition créole", "Hydratation"],
+    category: "Nutrition créole"
   },
   {
     title: "La NST Bowen : une solution révolutionnaire pour les manutentionnaires face aux TMS 💪",
@@ -251,7 +251,7 @@ const posts = [
     reads: "",
     image: "./blog/image/Bowen.webp",
     tags: ["Santé", "NST Bowen"],
-    category: "Thérapies corporelles"
+    category: "Bien-être holistique"
   },
   {
     title: "🧠 Comment les 'pourquoi' restreignent les capacités de votre cerveau",
@@ -273,7 +273,7 @@ const posts = [
     reads: "",
     image: "./blog/image/Bowen.webp",
     tags: ["Santé", "NST Bowen"],
-    category: "Thérapies corporelles"
+    category: "Bien-être holistique"
   },
   {
     title: "L'Intuition : Votre précieux allié pour une vie épanouie",
@@ -288,14 +288,14 @@ const posts = [
   },
   {
     title: "L'Alliance du Tai Ji Chuan et du Qi Gong",
-    file: "./blog/tai-ji-qi-gong",
+    file: "./blog/qi-gong-tai-chi",
     excerpt: "Une synergie de mouvement et d'énergie pour une santé optimale",
     date: "",
     author: "",
     reads: "",
     image: "./blog/image/yin-yang-tai-ji.webp",
     tags: ["Tai Ji Chuan", "Qi Gong", "Santé"],
-    category: "Techniques énergétiques"
+    category: "Bien-être holistique"
   },
   {
     title: "De l'ombre à la lumière : L'ascension d'un homme hors du commun",
@@ -306,7 +306,7 @@ const posts = [
     reads: "",
     image: "./blog/image/ombre-lumiere.png",
     tags: ["Développement personnel"],
-    category: "Histoire & Inspiration"
+    category: "Sagesses & Inspiration"
   },
   {
     title: "Le code des graines germées",
@@ -316,8 +316,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/grainesgermees.png",
-    tags: ["Santé", "Nutrition"],
-    category: "Nutrition"
+    tags: ["Santé", "Nutrition créole"],
+    category: "Nutrition créole"
   },
   {
     title: "🌱 Les super-aliments créoles",
@@ -327,8 +327,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/super-aliments.webp",
-    tags: ["Santé", "Nutrition"],
-    category: "Nutrition"
+    tags: ["Santé", "Nutrition créole"],
+    category: "Nutrition créole"
   },
   {
     title: "Découvrez les bienfaits du Touch for Health®",
@@ -338,8 +338,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/TFH.png",
-    tags: ["Santé", "Nutrition"],
-    category: "Thérapies corporelles"
+    tags: ["Santé", "Nutrition créole"],
+    category: "Bien-être holistique"
   },
   {
     title: "Léonard de Vinci",
@@ -350,7 +350,7 @@ const posts = [
     reads: "",
     image: "./blog/image/leonard-de-vinci.mp4",
     tags: ["Histoire", "Développement personnel"],
-    category: "Histoire & Inspiration"
+    category: "Sagesses & Inspiration"
   },
   {
     title: "Trouvez la sérénité en méditant avec les arbres",
@@ -361,7 +361,7 @@ const posts = [
     reads: "",
     image: "./blog/image/meditation-arbres.png",
     tags: ["Techniques", "Énergie"],
-    category: "Techniques énergétiques"
+    category: "Bien-être holistique"
   },
   {
     title: "L'Alimentation saine et le sport",
@@ -371,8 +371,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/alimentation-sport.mp4",
-    tags: ["Santé", "Nutrition", "Hydratation"],
-    category: "Nutrition"
+    tags: ["Santé", "Nutrition créole", "Hydratation"],
+    category: "Nutrition créole"
   },
   {
     title: "Explorez votre génie intérieur",
@@ -393,8 +393,8 @@ const posts = [
     author: "",
     reads: "",
     image: "./blog/image/revolution-cantine-japon.webp",
-    tags: ["Santé", "Nutrition", "Alimentation"],
-    category: "Nutrition"
+    tags: ["Santé", "Nutrition créole", "Alimentation"],
+    category: "Nutrition créole"
   },
   {
     title: "Résilience : 3 Forces cachées pour transformer votre passé douloureux selon la sagesse ancienne",
@@ -416,7 +416,96 @@ const posts = [
     reads: "",
     image: "./blog/image/passe-avenir.webp",
     tags: ["Développement personnel", "Transformation", "Résilience"],
-    category: "Santé & Bien-être"
+    category: "Bien-être holistique"
+  },
+
+  {
+    title: "L'Approche Synaptika: comment votre corps sait déjà retrouver son équilibre",
+    file: "./blog/approche-synaptika",
+    excerpt: "Découvrez l'Approche Synaptika, une méthode unique en Martinique centrée sur la NST Bowen pour retrouver votre équilibre naturel.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "6 min",
+    image: "./blog/images/approche-synaptika.jpg",
+    tags: ["NST Bowen Martinique", "développement personnel", "bien-être Martinique", "système nerveux", "équilibre naturel", "Synaptika"],
+    category: "Développement personnel"
+  },
+  {
+    title: "Comment se déroule une séance de NST Bowen en Martinique: le guide complet",
+    file: "./blog/deroulement-seance-nst",
+    excerpt: "Le guide complet pour votre première séance de NST Bowen en Martinique: déroulement, préparation, sensations et conseils pratiques.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "4 min",
+    image: "./blog/images/deroulement-seance-nst.svg",
+    tags: ["NST Bowen séance", "première séance Martinique", "déroulement NST", "préparation séance bien-être", "contre-indications NST"],
+    category: "Bien-être holistique"
+  },
+  {
+    title: "NST Bowen et gestion du stress: comment votre corps peut retrouver son calme naturellement",
+    file: "./blog/nst-gestion-stress",
+    excerpt: "Comment la NST Bowen aide votre système nerveux à retrouver son calme naturellement. Mécanismes, bienfaits et conseils pratiques.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "5 min",
+    image: "./blog/images/nst-gestion-stress.jpg",
+    tags: ["NST Bowen stress", "gestion du stress Martinique", "système nerveux", "détente naturelle 972", "stress chronique"],
+    category: "Bien-être holistique"
+  },
+  {
+    title: "Les sensations après une séance de NST Bowen: ce qu'il faut savoir",
+    file: "./blog/sensations-apres-seance",
+    excerpt: "Découvrez ce qu'il est normal de ressentir après une séance de NST Bowen et comment accompagner votre corps dans le processus d'intégration.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "4 min",
+    image: "./blog/images/sensations-apres-seance.jpg",
+    tags: ["après séance NST", "sensations NST Bowen", "intégration corps", "réactions post-séance", "récupération bien-être"],
+    category: "Bien-être holistique"
+  },
+  {
+    title: "Combien de séances de NST Bowen sont nécessaires? Le guide complet",
+    file: "./blog/combien-seances-nst",
+    excerpt: "Découvrez combien de séances de NST Bowen sont réellement nécessaires selon votre situation. Parcours typique et conseils pratiques.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "5 min",
+    image: "./blog/images/combien-seances-nst.jpg",
+    tags: ["nombre séances NST Bowen", "fréquence séances Martinique", "parcours NST", "durée accompagnement bien-être", "suivi NST"],
+    category: "Bien-être holistique"
+  },
+  {
+    title: "NST Bowen et sommeil: comment retrouver des nuits réparatrices naturellement",
+    file: "./blog/nst-sommeil",
+    excerpt: "Découvrez comment la NST Bowen aide à retrouver un sommeil réparateur en Martinique. Solutions naturelles contre l'insomnie.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "5 min",
+    image: "./blog/images/nst-sommeil.jpg",
+    tags: ["NST Bowen sommeil", "insomnie Martinique", "troubles du sommeil 972", "sommeil réparateur naturel", "mieux dormir sans médicaments"],
+    category: "Bien-être holistique"
+  },
+  {
+    title: "Le mensonge du Lâcher Prise: pourquoi votre cerveau refuse de vous détendre",
+    file: "./blog/lacher-prise",
+    excerpt: "Vous n'arrivez pas à lâcher prise? Votre cerveau a besoin de signaux PHYSIQUES, pas mentaux. Découvrez le protocole somatique en 2 minutes.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "5 min",
+    image: "./blog/images/lacher-prise.svg",
+    tags: ["lâcher prise", "stress chronique", "système nerveux autonome", "approche somatique", "gestion du stress"],
+    category: "Développement personnel"
+  },
+  {
+    title: "Pourquoi les hiboux ne burnoutent jamais: la loi circadienne",
+    file: "./blog/rythmes-circadiens-hiboux",
+    excerpt: "Vous forcez à 22h et êtes épuisé à 10h? Découvrez la loi circadienne que les entrepreneurs ignorent et le Rythme du Hibou.",
+    date: "2026-07-12",
+    author: "Thierry Felicia",
+    reads: "5 min",
+    image: "./blog/images/rythmes-circadiens-hiboux.jpg",
+    tags: ["rythme circadien", "productivité", "burn-out", "chronobiologie", "énergie"],
+    category: "Productivité"
   }
 ];
 

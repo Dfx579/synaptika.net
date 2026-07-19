@@ -1,6 +1,17 @@
 // Liste des articles du blog Synaptika
 const posts = [
   {
+    title: "🌿 NST Bowen : on apròch dous pou édé kò-w rétwouvé kalm ak byennèt li",
+    file: "./blog/nst-bowen-creole",
+    excerpt: "Découvrez la NST Bowen, une approche douce pour aider votre corps à retrouver calme et bien-être naturellement.",
+    date: "2026-07-19",
+    author: "Thierry Felicia",
+    reads: "8 min",
+    image: "./blog/images/nst-bowen-creole.jpg",
+    tags: ["NST Bowen", "Bien-être", "Créole", "Martinique", "Détente"],
+    category: "Thérapies corporelles"
+  },
+  {
     title: "🌴 5 éléments du Tao en cuisine créole : les plats martiniquais qui régulent vos émotions",
     file: "./blog/5-elements-tao-cuisine-creole-emotions-martinique",
     excerpt: "Citron pays, margose, giromon, christophine, pois noirs : votre cuisine créole a toujours su prendre soin de vous.",

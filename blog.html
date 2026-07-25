@@ -219,6 +219,15 @@ margin-top: 80px;
 h1 { font-size: 32px; }
 .nav-content { flex-direction: column; gap: 15px; }
 }
+.static-articles {
+  max-width: 1000px; margin: 0 auto; padding: 0 20px;
+}
+.static-articles article {
+  background: var(--card); margin-bottom: 20px; padding: 24px;
+  border-radius: 16px; box-shadow: 0 10px 30px var(--shadow);
+}
+.static-articles h2 { margin-bottom: 8px; font-size: 20px; }
+.static-articles a { color: var(--primary); text-decoration: none; }
 </style>
 </head>
 <body>
@@ -336,6 +345,9 @@ function loadPosts() {
     return;
   }
 
+  const staticBlock = document.getElementById('staticArticles');
+  if (staticBlock) staticBlock.style.display = 'none';
+
   posts.forEach((post, index) => {
     const article = document.createElement('article');
     article.className = 'post';
@@ -416,9 +428,8 @@ if (document.readyState === 'loading') {
   initCookies();
 }
 </script>
-<noscript>
 <!-- STATIC_ARTICLES_START -->
-<div class="static-articles">
+<div class="static-articles" id="staticArticles">
   <article>
     <h2><a href="./blog/5-elements-tao-cuisine-creole-emotions-martinique.html">🌴 5 éléments du Tao en cuisine créole : les plats martiniquais qui régulent vos émotions</a></h2>
     <p>Citron pays, margose, giromon, christophine, pois noirs : votre cuisine créole a toujours su prendre soin de vous.</p>
@@ -605,7 +616,6 @@ if (document.readyState === 'loading') {
   </article>
 </div>
 <!-- STATIC_ARTICLES_END -->
-</noscript>
 </body>
 </html>
 <div style="text-align:center; padding: 20px; margin-top: 40px; border-top: 1px solid #ddd; font-size: 0.85rem;">

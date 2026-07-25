@@ -227,7 +227,27 @@
             <p class="blog-sub">Une source d'inspiration pour vous accompagner dans votre parcours de bien-être</p>
         </div>
         <div class="blog-grid" id="blog-posts-container">
-            <!-- 記事はJavaScriptで動的に読み込まれます -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                <img src="./blog/images/nst-bowen-creole.jpg" alt="NST Bowen" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">NST Bowen : on apròch dous pou édé kò-w rétwouvé kalm ak byennèt li</h3>
+                    <a href="./blog/nst-bowen-creole.html" class="text-purple-600 font-medium hover:text-purple-800">Lire l'article →</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                <img src="./blog/images/5-elements-assiette.jpg" alt="5 éléments du Tao en cuisine créole" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">5 éléments du Tao en cuisine créole</h3>
+                    <a href="./blog/5-elements-tao-cuisine-creole-emotions-martinique.html" class="text-purple-600 font-medium hover:text-purple-800">Lire l'article →</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                <img src="./blog/images/image-optimisee-eft-meridiens.jpg" alt="Comment optimiser votre pratique de l'EFT" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Comment optimiser votre pratique de l'EFT ?</h3>
+                    <a href="./blog/comment-optimiser-pratique-eft.html" class="text-purple-600 font-medium hover:text-purple-800">Lire l'article →</a>
+                </div>
+            </div>
         </div>
         <div class="blog-footer">
             <a class='btn btn-rounded' href='blog.html' target='_blank'>Accéder au blog</a>
@@ -317,6 +337,7 @@
     const container = document.getElementById('blog-posts-container');
     
     if (container && typeof posts !== 'undefined') {
+        container.innerHTML = '';
         const latestPosts = posts.slice(0, 3);
         
         latestPosts.forEach(post => {

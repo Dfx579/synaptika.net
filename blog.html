@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 <head>
+<script>document.documentElement.classList.remove('no-js');</script>
 <!-- SEO最適化 -->
 <meta charset="UTF-8">
 <!-- Google Tag Manager — chargé uniquement après consentement CNIL -->
@@ -228,6 +229,8 @@ h1 { font-size: 32px; }
 }
 .static-articles h2 { margin-bottom: 8px; font-size: 20px; }
 .static-articles a { color: var(--primary); text-decoration: none; }
+.static-articles { display: none; }
+.no-js .static-articles { display: block; }
 </style>
 </head>
 <body>

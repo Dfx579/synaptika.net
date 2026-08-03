@@ -3,11 +3,6 @@
   command = "node generate-static-blog.js"
 
 [[redirects]]
-  from = "/blog/*"
-  to = "/blog/:splat"
-  status = 200
-
-[[redirects]]
   from = "/Epsom.html"
   to = "/blog/Epsom.html"
   status = 301

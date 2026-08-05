@@ -1,33 +1,151 @@
+
 [build]
-  publish = "."
-  command = "node generate-static-blog.js"
+
+publish = "."
+
+command = "node generate-static-blog.js"
+
+
+
+# Minification
+
+[build.processing]
+
+skip_processing = false
+
+
+
+[build.processing.css]
+
+bundle = true
+
+minify = true
+
+
+
+[build.processing.js]
+
+bundle = true
+
+minify = true
+
+
+
+[build.processing.images]
+
+compress = true
+
+
+
+# Redirections anciennes URLs
 
 [[redirects]]
-  from = "/Epsom.html"
-  to = "/blog/Epsom.html"
-  status = 301
+
+from = "/Epsom.html"
+
+to = "/blog/Epsom.html"
+
+status = 301
+
+
 
 [[redirects]]
-  from = "/Laotseu.html"
-  to = "/blog/Laotseu.html"
-  status = 301
+
+from = "/Laotseu.html"
+
+to = "/blog/Laotseu.html"
+
+status = 301
+
+
 
 [[redirects]]
-  from = "/leonard"
-  to = "/blog/leonard-de-vinci.html"
-  status = 301
+
+from = "/leonard"
+
+to = "/blog/leonard-de-vinci.html"
+
+status = 301
+
+
 
 [[redirects]]
-  from = "/super-aliments-creoles"
-  to = "/blog/superaliments.html"
-  status = 301
+
+from = "/super-aliments-creoles"
+
+to = "/blog/superaliments.html"
+
+status = 301
+
+
 
 [[redirects]]
-  from = "/education-au-japon"
-  to = "/blog/revolution-cantine-japon.html"
-  status = 301
+
+from = "/education-au-japon"
+
+to = "/blog/revolution-cantine-japon.html"
+
+status = 301
+
+
 
 [[redirects]]
-  from = "/consequencespositivesnegatives"
-  to = "/blog"
-  status = 301
+
+from = "/consequencespositivesnegatives"
+
+to = "/blog"
+
+status = 301
+
+
+
+# Redirection www -> non-www
+
+[[redirects]]
+
+from = "https://www.synaptika.net/*"
+
+to = "https://synaptika.net/:splat"
+
+status = 301
+
+force = true
+
+
+
+# Headers securite
+
+[[headers]]
+
+for = "/*"
+
+[headers.values]
+
+X-Frame-Options = "DENY"
+
+X-Content-Type-Options = "nosniff"
+
+Referrer-Policy = "strict-origin-when-cross-origin"
+
+
+
+[[headers]]
+
+for = "/*.html"
+
+[headers.values]
+
+Cache-Control = "public, max-age=0, must-revalidate"
+
+
+
+[[headers]]
+
+for = "/llms.txt"
+
+[headers.values]
+
+Cache-Control = "public, max-age=86400"
+
+Content-Type = "text/plain; charset=utf-8"
+

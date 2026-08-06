@@ -1,0 +1,122 @@
+#!/usr/bin/env python3
+-- coding: utf-8 --
+fix_titles.py - Correction des balises title Synaptika.net
+Règle : 50-60 caractères max, mot-clé principal en début
+
+import os
+import re
+
+BASE_DIR = os.path.expanduser("~/synaptika.net")
+
+Dictionnaire : fichier -> nouveau title (max 60 car.)
+TITLES = {
+    "apropos.html": "Thierry Felicia | Méthode Synaptika Martinique",
+    "post3.html": "Le médecin qui a écouté les fleurs | Synaptika",
+    "post2.html": "Dauphins et fatigue mentale | Synaptika",
+    "post1.html": "Sels d'Epsom : bienfaits et usages | Synaptika",
+    "blog.html": "Blog Synaptika | Bien-être & Santé naturelle",
+    "blog/ombre-lumiere.html": "De l'ombre à la lumière | Synaptika",
+    "blog/qi-gong-tai-chi.html": "Qi Gong & Tai Chi : aller plus profond | Synaptika",
+    "blog/smoothie-creole.html": "7 smoothies créoles anti-stress | Synaptika",
+    "blog/ordinateur-miroir-placard.html": "Votre ordi devrait être un miroir | Synaptika",
+    "blog/comment-pourquoi.html": "Pourquoi les 'pourquoi' bloquent votre cerveau",
+    "blog/TFH.html": "Touch for Health : bienfaits et séances | Synaptika",
+    "blog/dauphins.html": "Sagesse des dauphins contre la fatigue | Synaptika",
+    "blog/resilience.html": "Résilience : 3 forces pour transformer le passé",
+    "blog/leonard-de-vinci.html": "Léonard de Vinci : curiosité et innovation",
+    "blog/miroir.html": "Ce que votre miroir sait de vous | Synaptika",
+    "blog/theme-astral-stress.html": "Stress répétitif : ce que votre thème astral dit",
+    "blog/Epsom.html": "Sels d'Epsom : du village anglais à chez vous",
+    "blog/nst-bowen-creole.html": "NST Bowen en Martinique : approche douce | Synaptika",
+    "blog/alimentation-sport.html": "Alimentation & sport : duo pour la santé | Synaptika",
+    "blog/5-elements-tao-cuisine-creole-emotions-martinique.html": "5 éléments du Tao en cuisine créole | Synaptika",
+    "blog/intuition.html": "L'intuition : votre allié pour une vie épanouie",
+    "blog/Bowen-TMS.html": "NST Bowen contre les TMS | Synaptika",
+    "blog/igname-manioc-patate-douce.html": "Igname, Manioc, Patate douce : la science confirme",
+    "blog/Bach.html": "Fleurs de Bach : le médecin qui a tout quitté",
+    "blog/identite-heroique-stress.html": "Travailler dur sous pression sabote vos résultats",
+    "blog/eau.html": "L'eau pure : hydratation et santé optimale",
+    "blog/ressources-enfouies.html": "Ressources enfouies par le stress : les retrouver",
+    "blog/approche-synaptika.html": "Approche Synaptika : NST Bowen & kinésiologie",
+    "blog/transformez-votre-quotidien-10-minutes.html": "Trier ses pensées sans s'y perdre | Synaptika",
+    "blog/lacher-prise.html": "Lâcher prise : pourquoi votre cerveau refuse",
+    "blog/revolution-cantine-japon.html": "Cantine au Japon : la révolution éducative",
+    "blog/affiches-japonaises.html": "Affiches japonaises et art de la légèreté",
+    "blog/rythmes-circadiens-hiboux.html": "Rythmes circadiens : pourquoi les hiboux tiennent",
+    "blog/superaliments.html": "Super-aliments créoles pour une vitalité optimale",
+    "blog/grainesgermees.html": "Graines germées : 7 céréales pour votre vitalité",
+    "blog/essence-yiking.html": "Yi King & Essences florales : décoder vos émotions",
+    "blog/rimed-razie.html": "Ce que votre grand-mère savait | Synaptika",
+    "blog/Bowen.html": "NST Bowen : approche douce pour votre bien-être",
+    "blog/deroulement-seance-nst.html": "Séance NST Bowen en Martinique : guide complet",
+    "blog/Laotseu.html": "Colère, tristesse, injustice : guide Lao Tseu",
+    "blog/fuir-rend-plus-fort.html": "Ce qu'on fuit nous rend plus forts | Synaptika",
+    "blog/arbres.html": "Méditer avec les arbres pour trouver la sérénité",
+    "blog/nst-sommeil.html": "NST Bowen et sommeil : nuit réparatrice | Synaptika",
+    "blog/sagesse-eau.html": "Sagesse de l'eau : résister au changement épuise",
+    "blog/zenbox.html": "ZenBox : explorez votre génie intérieur | Synaptika",
+    "blog/passe-avenir.html": "Passé et avenir : héritages et bien-être | Synaptika",
+    "blog/synergie-aromatique.html": "Synergie aromatique : pause mentale en instants",
+}
+
+def fix_title(filepath, new_title):
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    original = content
+
+    Remplacer le title existant
+    content = re.sub(
+        r'<title>.*?</title>',
+        f'<title>{new_title}</title>',
+        content,
+        flags=re.DOTALL
+    )
+
+    if content != original:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(content)
+        length = len(new_title)
+        print(f"  ✅ ({length} car.) {filepath}")
+        return True
+    else:
+        print(f"  ⏭️  SKIP (title non trouvé) {filepath}")
+        return False
+
+def main():
+    print("=" * 55)
+    print("CORRECTION DES TITLES - Synaptika.net")
+    print("=" * 55)
+
+    modified = 0
+    errors = 0
+
+    for rel_path, new_title in TITLES.items():
+        filepath = os.path.join(BASE_DIR, rel_path)
+        length = len(new_title)
+
+        if length > 60:
+            print(f"  🔴 TROP LONG ({length} car.) : {new_title}")
+            errors += 1
+            continue
+
+        if not os.path.exists(filepath):
+            print(f"  🔴 FICHIER INTROUVABLE : {filepath}")
+            errors += 1
+            continue
+
+        result = fix_title(filepath, new_title)
+        if result:
+            modified += 1
+
+    print("\n" + "=" * 55)
+    print(f"  ✅ Fichiers modifiés  : {modified}")
+    print(f"  🔴 Erreurs           : {errors}")
+    print("\n🚀 Prochaine étape :")
+    print("  git add .")
+    print('  git commit -m "fix(seo): correction 47 balises title"')
+    print("  git push origin main")
+    print("=" * 55)
+
+if __name__ == "__main__":
+    main()

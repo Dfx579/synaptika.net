@@ -1,0 +1,67 @@
+
+# Semrush Toxic Backlinks Disavow - 2026/08/05
+
+# Mise a jour - ajout domaines toxiques detectes aout 2026
+
+
+
+# Domaines desavoues avril 2026
+
+domain:rankvancelinks.info
+
+domain:jobsapp.info
+
+domain:backlinksolutions.info
+
+domain:way2check.cv
+
+domain:rankvanceseo.info
+
+domain:5913231.cc
+
+domain:read.org.in
+
+domain:wonvision.com
+
+domain:websiterace.com
+
+domain:getwebsiteworth.com
+
+domain:1stcallglasscare.com
+
+domain:sergechel.info
+
+
+
+# Domaines ajoutes aout 2026
+
+domain:rankvance.pro
+
+domain:hzdlpq.com
+
+domain:booksreadr.org
+
+domain:therankvance.pro
+
+domain:backlinkbuilders.pro
+
+domain:globalecommerce.org
+
+
+
+# URLs specifiques
+
+https://5913231.cc/page-18a7efbe7844a9940eb8b687be2e7889.html
+
+https://www.read.org.in/page-18a7efbe7844a9940eb8b687be2e7889.html
+
+https://wonvision.com/253e213049826f350ebb56ae3c37c4ce-l/
+
+https://www.websiterace.com/253e213049826f350ebb56ae3c37c4ce-l/
+
+https://getwebsiteworth.com/253e213049826f350ebb56ae3c37c4ce-l/
+
+https://1stcallglasscare.com/professional-link-building-agency-94/
+
+https://sergechel.info/list-49ff606f51888218c65de32f42406a38
+

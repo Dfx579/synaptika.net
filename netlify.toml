@@ -43,7 +43,7 @@ compress = true
 
 from = "/Epsom.html"
 
-to = "/blog/Epsom.html"
+to = "/blog/Epsom"
 
 status = 301
 
@@ -53,7 +53,7 @@ status = 301
 
 from = "/Laotseu.html"
 
-to = "/blog/Laotseu.html"
+to = "/blog/Laotseu"
 
 status = 301
 
@@ -63,7 +63,7 @@ status = 301
 
 from = "/leonard"
 
-to = "/blog/leonard-de-vinci.html"
+to = "/blog/leonard-de-vinci"
 
 status = 301
 
@@ -156,7 +156,7 @@ Content-Type = "text/plain; charset=utf-8"
 
 from = "/Bach.html"
 
-to = "/blog/Bach.html"
+to = "/blog/Bach"
 
 status = 301
 

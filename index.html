@@ -188,6 +188,8 @@
 </nav>
 
 <!-- Hero Section -->
+<!-- Hero Section -->
+<!-- Hero Section -->
 <section class="hero">
   <div class="hero-content">
     <h1>Un temps pour souffler quand le stress s'installe</h1>
@@ -208,7 +210,7 @@
     </p>
     <div class="offer-layout">
       <div class="offer-image-wrap">
-        <img src="images/seance-nst.png" alt="Séance NST Bowen bien-être Fort-de-France" width="280" height="320" loading="lazy" style="border-radius: 16px; object-fit: cover;">
+        <img src="images/fond1.webp" alt="Séance NST Bowen bien-être Fort-de-France" width="280" height="320" loading="lazy" style="border-radius: 16px; object-fit: cover;">
       </div>
       <div class="offer-box">
         <h3>Ce que vous apporte la séance :</h3>
@@ -243,7 +245,7 @@
   <div class="container">
     <div class="offer-heading">
       <i data-feather="book-open"></i>
-      <h2>Des techniques simples, experimentees avant d'etre transmises</h2>
+      <h2>Des techniques simples, expérimentées avant d'être transmises</h2>
     </div>
     <p class="offer-subtitle">
       Cinq approches d'exploration personnelle pour calmer le mental et retrouver votre équilibre naturel, à pratiquer chez vous en dix minutes. Découvrez-les librement dans ce guide gratuit.
@@ -268,13 +270,13 @@
             <div><h4>Habiter son corps</h4><p>L'attention portée à l'équilibre corporel comme trésor de longévité.</p></div>
           </div>
           <div class="offer-grid-item">
-            <div><h4>La ressource du geste simple</h4><p>Une posture de la main qui active l'apaisement plutot que la reaction de stress.</p></div>
+            <div><h4>La ressource du geste simple</h4><p>Une posture de la main qui active l'apaisement plutôt que la réaction de stress.</p></div>
           </div>
         </div>
         <p class="offer-note"><em>Ces techniques sont des outils d'exploration personnelle. Elles ne remplacent pas un suivi médical.</em></p>
         <form method="post" action="https://sendfox.com/form/1k85w9/1r0poy" class="signup-form sendfox-form" id="1r0poy" data-async="true" data-recaptcha="false">
           <div class="form-group">
-            <input type="text" id="sendfox_form_name" placeholder="Votre prenom" name="first_name" required>
+            <input type="text" id="sendfox_form_name" placeholder="Votre prénom" name="first_name" required>
           </div>
           <div class="form-group">
             <input type="email" id="sendfox_form_email" placeholder="Votre email" name="email" required>
@@ -282,29 +284,56 @@
           <div style="position: absolute; left: -5000px;" aria-hidden="true">
             <input type="text" name="a_password" tabindex="-1" value="" autocomplete="off">
           </div>
-          <p class="form-privacy-note">Vos donnees sont protegees et jamais partagees.</p>
-          <button type="submit" class="btn-submit">Recevoir le guide gratuit →</button>
-          <p class="form-spam-note">🔒 Donnees protegees &nbsp;·&nbsp; ✉️ Aucun spam.</p>
+          <p class="form-privacy-note">🔒 Vos données sont protégées et jamais partagées. ✉️ Aucun spam.</p>
+          <div class="form-group form-consent">
+            <label style="display:flex; align-items:flex-start; gap:8px; font-size:0.85rem; color:#555; cursor:pointer;">
+              <input type="checkbox" id="consent_checkbox" required style="margin-top:3px;">
+              <span>J'accepte de recevoir le guide gratuit et d'être contacté(e) par Thierry Felicia. <a href="/politique-confidentialite" target="_blank" style="color:#5B3E9C;">Voir la politique de confidentialité</a>.</span>
+            </label>
+          </div>
+          <button type="submit" class="btn-submit" id="submit_guide_btn" disabled style="opacity:0.5; cursor:not-allowed;">Recevoir le guide gratuit →</button>
         </form>
         <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
+        <script>
+          (function() {
+            var checkbox = document.getElementById('consent_checkbox');
+            var btn = document.getElementById('submit_guide_btn');
+            if (checkbox && btn) {
+              checkbox.addEventListener('change', function() {
+                btn.disabled = !checkbox.checked;
+                btn.style.opacity = checkbox.checked ? '1' : '0.5';
+                btn.style.cursor = checkbox.checked ? 'pointer' : 'not-allowed';
+              });
+            }
+          })();
+        </script>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Rappel de reservation -->
+<!-- Rappel de réservation -->
 <section class="section-holistic">
   <div class="container">
     <h2>Votre temps de pause commence ici</h2>
     <p>Vous n'avez pas besoin de tout changer d'un coup.</p>
     <p>Il suffit d'un premier pas : une séance, un espace où votre corps et votre esprit peuvent enfin souffler.</p>
     <p>Que vous ressentiez de la tension, de la fatigue ou simplement le besoin de relâcher la pression, la séance vous offre un espace adapté à votre rythme.</p>
-    <p><strong>Une approche douce, attentive et orientee vers votre confort corporel.</strong></p>
+    <p><strong>Une approche douce, attentive et orientée vers votre confort corporel.</strong></p>
     <p class="methods-tags">🤲 NST Bowen &nbsp;·&nbsp; 🖐️ Touch for Health &nbsp;·&nbsp; 🌀 Approches douces</p>
     <div style="margin-top: 25px;">
       <a href="https://tally.so/r/lb1GPX" target="_blank" rel="noopener noreferrer" class="btn btn-rounded">🌟 Réserver mon créneau à Fort-de-France (90 €) →</a>
     </div>
   </div>
+</section>
+
+<!-- Free Resources Section -->
+<section class="section-resources">
+    <div class="container">
+        <h2>Ressources gratuites</h2>
+        <p>Découvrez nos guides et conseils éprouvés pour améliorer votre qualité de vie et gérer le stress naturellement en Martinique. Techniques holistiques adaptées à vos besoins.</p>
+        <a class="btn btn-rounded" href="/ressourcesgratuites">Télécharger nos guides gratuits</a>
+    </div>
 </section>
 
 <!-- Blog Section -->

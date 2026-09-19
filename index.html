@@ -414,29 +414,36 @@
     </div>
 </footer>
     
-<script async src="https://cdn.counter.dev/script.js" data-id="f5657ede-6192-41bd-a900-2c95071972e3" data-utcoffset="-4"></script>
-
-<!--Start of Tawk.to Script：スクロール/クリック後に遅延読み込み（速度改善） -->
+<!--Start of Tawk.to + counter.dev (charges uniquement apres consentement) -->
 <script type="text/javascript">
-(function(){
-  function loadTawk(){
-    if(window._tawkLoaded) return;
-    window._tawkLoaded = true;
-    var Tawk_API = Tawk_API || {};
-    var s1 = document.createElement("script");
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/6329db7454f06e12d895d62c/1gddo2ft4';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin','*');
-    document.body.appendChild(s1);
-  }
+function loadTawkAndCounter(){
+  if(window._extrasLoaded) return;
+  window._extrasLoaded = true;
+
+  var cs = document.createElement("script");
+  cs.async = true;
+  cs.src = "https://cdn.counter.dev/script.js";
+  cs.setAttribute("data-id", "f5657ede-6192-41bd-a900-2c95071972e3");
+  cs.setAttribute("data-utcoffset", "-4");
+  document.body.appendChild(cs);
+
+  var Tawk_API = Tawk_API || {};
+  var s1 = document.createElement("script");
+  s1.async = true;
+  s1.src = 'https://embed.tawk.to/6329db7454f06e12d895d62c/1gddo2ft4';
+  s1.charset = 'UTF-8';
+  s1.setAttribute('crossorigin','*');
+  document.body.appendChild(s1);
+}
+// Si deja accepte lors d'une visite precedente : chargement differe (scroll/clic/4s) pour la performance
+if (localStorage.getItem('cookiesAccepted') === 'true') {
   ['scroll','click','touchstart','keydown'].forEach(function(e){
-    window.addEventListener(e, loadTawk, {once: true, passive: true});
+    window.addEventListener(e, loadTawkAndCounter, {once: true, passive: true});
   });
-  setTimeout(loadTawk, 4000);
-})();
+  setTimeout(loadTawkAndCounter, 4000);
+}
 </script>
-<!--End of Tawk.to Script-->
+<!--End of Tawk.to + counter.dev-->
 
 <!-- feather-icons: deferで読み込まれるためDOMContentLoaded後に実行 -->
 <script>
@@ -493,6 +500,7 @@ function acceptCookies() {
     localStorage.setItem('cookiesAccepted', 'true');
     document.getElementById('cookieBanner').classList.remove('show');
     loadGTM(); // Charger GTM uniquement maintenant
+    loadTawkAndCounter(); // Charger Tawk.to et counter.dev uniquement maintenant
 }
 function declineCookies() {
     localStorage.setItem('cookiesAccepted', 'false');

@@ -1,6 +1,18 @@
 // Liste des articles du blog Synaptika
 const posts = [
   {
+    title: "😮‍💨 Pourquoi le repos ne suffit pas quand le stress s'accumule",
+    file: "./blog/pourquoi-le-repos-ne-suffit-pas",
+    excerpt: "Le repos seul ne suffit pas toujours à évacuer le stress accumulé. Découvrez pourquoi, et 4 rituels gratuits pour aider votre corps à relâcher la pression.",
+    date: "2026-09-30",
+    author: "Thierry Felicia",
+    reads: "8 min",
+    image: "/images/artnst-blog.png",
+    tags: ["Stress chronique", "Fatigue persistante", "Bien-être", "NST Bowen"],
+    category: "Bien-être holistique"
+  },
+
+  {
     title: "🌿 NST Bowen : on apròch dous pou édé kò-w rétwouvé kalm ak byennèt li",
     file: "./blog/nst-bowen-creole",
     excerpt: "Découvrez la NST Bowen, une approche douce pour aider votre corps à retrouver calme et bien-être naturellement.",

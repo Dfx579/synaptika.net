@@ -212,7 +212,7 @@ const posts = [
   },
   {
     title: "Du petit village d'Epsom à votre salle de bain : l'histoire fascinante d'un rituel de détente ancestral",
-    file: "./blog/Epsom",
+    file: "./blog/epsom",
     excerpt: "Découvrez l'histoire fascinante du sel d'Epsom et ses bienfaits méconnus pour votre bien-être quotidien.",
     date: "",
     author: "",
@@ -234,7 +234,7 @@ const posts = [
   },
   {
     title: "Le médecin qui a tout quitté pour écouter les fleurs 🌸",
-    file: "./blog/Bach",
+    file: "./blog/bach",
     excerpt: "L'histoire inspirante du Dr Edward Bach et la naissance de la thérapie florale qui révolutionna la médecine alternative.",
     date: "",
     author: "",
@@ -245,7 +245,7 @@ const posts = [
   },
   {
     title: "Maîtrisez colère, tristesse et injustice : guide inspiré de Lao Tseu et Bouddha ✨",
-    file: "./blog/Laotseu",
+    file: "./blog/laotseu",
     excerpt: "Comment vos blessures d'hier contiennent les graines de votre puissance de demain 🌱",
     date: "",
     author: "",
@@ -267,7 +267,7 @@ const posts = [
   },
   {
     title: "La NST Bowen : une solution révolutionnaire pour les manutentionnaires face aux TMS 💪",
-    file: "./blog/Bowen-TMS",
+    file: "./blog/bowen-tms",
     excerpt: "Le quotidien douloureux des manutentionnaires : comprendre pour mieux agir",
     date: "",
     author: "",
@@ -289,7 +289,7 @@ const posts = [
   },
   {
     title: "La NST Bowen : Une solution naturelle contre les douleurs du quotidien",
-    file: "./blog/Bowen",
+    file: "./blog/bowen",
     excerpt: "Qu'est-ce que la NST Bowen ?",
     date: "",
     author: "",
@@ -355,7 +355,7 @@ const posts = [
   },
   {
     title: "Découvrez les bienfaits du Touch for Health®",
-    file: "./blog/TFH",
+    file: "./blog/tfh",
     excerpt: "Votre chemin vers l'équilibrage énergétique et le bien-être",
     date: "",
     author: "",

@@ -1,0 +1,55 @@
+/* ===== Carrousel « Les tissus du corps » — styles isolés sous #tissus ===== */
+#tissus .ts-card {
+  --muscle:#e88d84; --tendon:#f4efe6; --ligament:#f2c46d; --fascia:#4fd1c5; --meridian:#b9a4ff; --bone:#cfd8d6;
+  --ink:#e8f1f2; --mute:#9fb4ba;
+  position: relative; max-width: 1000px; margin: 0 auto; overflow: hidden; text-align: left; color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  border-radius: 18px; box-shadow: 0 12px 40px rgba(15,23,42,.22);
+  background: radial-gradient(ellipse at 30% 40%, #14333d 0%, #0d222a 55%, #0a171c 100%);
+}
+#tissus .ts-viewport { overflow: hidden; touch-action: pan-y; }
+#tissus .ts-track { display: flex; transition: transform .7s cubic-bezier(.65,0,.35,1); }
+#tissus .ts-slide { flex: 0 0 100%; display: grid; grid-template-columns: 1.25fr 1fr; gap: 32px; align-items: center; padding: 28px 68px 10px; }
+#tissus .ts-visual { position: relative; aspect-ratio: 16 / 10; border-radius: 14px; overflow: hidden;
+  background: radial-gradient(ellipse at 50% 50%, #12303a, #0a171c); border: 1px solid rgba(255,255,255,.1); }
+#tissus .ts-visual svg { position: absolute; inset: 0; width: 100%; height: 100%; padding: 8px 0; }
+#tissus .ts-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .8s; }
+#tissus .ts-visual.has-img img { opacity: 1; }
+#tissus .ts-visual.has-img svg { display: none; }
+#tissus .ts-step { font-size: 14px; color: var(--mute); margin: 0 0 8px; letter-spacing: .04em; }
+#tissus .ts-title { font-size: clamp(26px, 4vw, 36px); font-weight: normal; margin: 0 0 12px; color: var(--accent); font-family: inherit; }
+#tissus .ts-text { font-size: 17px; line-height: 1.65; margin: 0; max-width: 40ch; color: var(--ink); }
+
+#tissus .ts-arrow { position: absolute; top: 180px; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; z-index: 2; padding: 0;
+  background: rgba(10,23,28,.6); border: 1px solid rgba(255,255,255,.25); color: var(--ink); font-size: 20px; line-height: 1; font-family: inherit; }
+#tissus .ts-arrow:hover { background: rgba(255,255,255,.18); }
+#tissus .ts-prev { left: 10px; } #tissus .ts-next { right: 10px; }
+#tissus .ts-nav { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 10px; padding: 12px 16px 6px; }
+#tissus .ts-nav button { font: inherit; font-size: 14px; color: var(--mute); background: none; border: 0; border-bottom: 2px solid transparent;
+  padding: 6px 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; border-radius: 0; box-shadow: none; }
+#tissus .ts-nav button i { width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
+#tissus .ts-nav button[aria-current="true"] { color: var(--ink); border-bottom-color: var(--c); }
+#tissus .ts-sep { color: rgba(255,255,255,.25); }
+#tissus .ts-nav .ts-pp { margin-left: 8px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; padding: 4px 12px; }
+#tissus button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+#tissus .ts-note { font-size: 13px; font-style: italic; color: var(--mute); text-align: center; margin: 0; padding: 4px 16px 16px; line-height: 1.45; }
+
+#tissus .ts-bones { fill: rgba(207,216,214,.16); stroke: rgba(207,216,214,.3); stroke-width: 1; }
+#tissus .ts-bones.hi { fill: rgba(207,216,214,.38); stroke: rgba(235,242,240,.8); stroke-width: 1.4; }
+#tissus .ts-fib { fill: none; stroke: rgba(255,205,195,.6); stroke-width: 1; }
+#tissus .ts-web { stroke: #4fd1c5; stroke-width: .8; opacity: .7; }
+#tissus .ts-shimmer { animation: ts-shimmer 6s ease-in-out infinite; }
+#tissus .ts-flow { stroke-dasharray: 5 7; animation: ts-flow 5s linear infinite; }
+@keyframes ts-shimmer { 0%,100% { opacity: .55 } 50% { opacity: 1 } }
+@keyframes ts-flow { to { stroke-dashoffset: -48 } }
+@media (prefers-reduced-motion: reduce) {
+  #tissus .ts-shimmer, #tissus .ts-flow { animation: none }
+  #tissus .ts-track, #tissus .ts-visual img { transition: none }
+}
+#tissus .ts-cta { text-align: center; margin-top: 2rem; }
+@media (max-width: 720px) {
+  #tissus .ts-slide { grid-template-columns: 1fr; gap: 14px; padding: 16px 18px 4px; text-align: center; }
+  #tissus .ts-text { margin: 0 auto; font-size: 16px; }
+  #tissus .ts-arrow { top: 110px; width: 38px; height: 38px; } #tissus .ts-prev { left: 6px; } #tissus .ts-next { right: 6px; }
+}
+#tissus .ts-card:empty { min-height: 560px; }

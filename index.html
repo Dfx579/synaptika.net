@@ -35,6 +35,7 @@
     <link rel="preload" as="image" href="images/seance-nst.png">
     <!-- Tailwind廃止 → style.cssに直接記述 -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tissus.css">
     <style>
     /* === RGPD Cookie Banner === */
     .cookie-banner {
@@ -194,6 +195,10 @@
   <div class="hero-content">
     <h1>Un temps pour souffler : séance de bien-être NST Bowen à Fort-de-France</h1>
     <p>Une approche corporelle douce, dans un cadre calme, attentif et non médical, pour vous offrir une vraie pause lorsque le stress s’installe.</p>
+    <div style="margin-top: 22px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+      <a href="#seance" class="btn btn-rounded" style="font-size: 1rem; padding: 13px 28px;">🌟 Réserver ma séance →</a>
+      <a href="#offer" class="btn btn-rounded" style="font-size: 1rem; padding: 13px 28px; background: #fff; color: #5B3E9C; border: 2px solid #5B3E9C;">📘 Guide gratuit</a>
+    </div>
   </div>
 </section>
 
@@ -240,19 +245,35 @@
   </div>
 </section>
 
+
+<!-- Les tissus du corps : carrousel -->
+<section id="tissus" class="section-offer" style="padding-top: 4rem; padding-bottom: 4rem; border-top: 1px solid #eee;">
+  <div class="container">
+    <div class="offer-heading" style="margin-bottom: 1rem;">
+      <h2>Les tissus du corps, pas à pas</h2>
+    </div>
+    <p class="offer-subtitle" style="margin-bottom: 2rem;">Un petit tour visuel pour mieux comprendre le vocabulaire de la séance.</p>
+    <div id="tissus-carousel" class="ts-card" aria-roledescription="carrousel" aria-label="Les tissus du corps, pas à pas"></div>
+    <div class="ts-cta">
+      <a href="https://tally.so/r/lb1GPX" target="_blank" rel="noopener noreferrer" class="btn btn-rounded" style="font-size: 1.1rem; padding: 16px 32px; display: inline-block;">
+        🌟 Je prends rendez-vous (90 €) →
+      </a>
+    </div>
+  </div>
+</section>
 <!-- Lead Magnet -->
 <section id="offer" class="section-offer" style="background: #fafafa; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
   <div class="container">
     <div class="offer-heading">
       <i data-feather="book-open"></i>
-      <h2>Des techniques simples, expérimentées avant d'être transmises</h2>
+      <h2>Apaiser le mental — 5 techniques simples</h2>
     </div>
     <p class="offer-subtitle">
       Cinq approches d'exploration personnelle pour calmer le mental et retrouver votre équilibre naturel, à pratiquer chez vous en dix minutes. Découvrez-les librement dans ce guide gratuit.
     </p>
     <div class="offer-layout">
       <div class="offer-image-wrap">
-        <img src="images/guide-lead.webp" alt="Guide gratuit Synaptika" width="280" height="320" loading="lazy" style="border-radius: 16px; object-fit: contain; background-color: #fafafa;">
+        <img src="images/guide-lead.webp" alt="Guide gratuit Apaiser le mental - 5 techniques simples - Synaptika" width="280" height="320" loading="lazy" style="border-radius: 16px; object-fit: contain; background-color: #fafafa;">
       </div>
       <div class="offer-box">
         <h3>Ce que vous allez explorer :</h3>
@@ -509,6 +530,7 @@ function declineCookies() {
 }
 document.addEventListener('DOMContentLoaded', initCookies);
 </script>
+<script defer data-cfasync="false" src="tissus.js"></script>
 </body>
 </html>
 <!-- Test du hook pre-commit -->

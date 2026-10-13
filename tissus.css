@@ -47,7 +47,7 @@
   #tissus .ts-shimmer, #tissus .ts-flow { animation: none }
   #tissus .ts-track, #tissus .ts-visual img { transition: none }
 }
-#tissus .ts-cta { text-align: center; margin-top: 2rem; margin-bottom: 1.5rem; }
+#tissus .ts-cta { text-align: center; margin-top: 2rem; margin-bottom: 3.5rem; }
 @media (max-width: 720px) {
   #tissus .ts-slide { grid-template-columns: 1fr; gap: 14px; padding: 16px 18px 4px; text-align: center; }
   #tissus .ts-text { margin: 0 auto; font-size: 16px; }

@@ -310,17 +310,6 @@ const posts = [
     category: "Développement personnel"
   },
   {
-    title: "L'Alliance du Tai Ji Chuan et du Qi Gong",
-    file: "./blog/qi-gong-tai-chi",
-    excerpt: "Une synergie de mouvement et d'énergie pour une santé optimale",
-    date: "",
-    author: "",
-    reads: "",
-    image: "./blog/image/yin-yang-tai-ji.webp",
-    tags: ["Tai Ji Chuan", "Qi Gong", "Santé"],
-    category: "Bien-être holistique"
-  },
-  {
     title: "De l'ombre à la lumière : L'ascension d'un homme hors du commun",
     file: "./blog/ombre-lumiere",
     excerpt: "Du plus bas rang social à la présidence",

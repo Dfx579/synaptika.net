@@ -3,6 +3,13 @@ const path = require('path');
 
 const SITE = 'https://synaptika.net';
 const today = new Date().toISOString().slice(0, 10);
+const { execSync } = require('child_process');
+const EXCLUDE = ['404', 'googlef754b1749eeaa8b6', 'preview-images', 'pageconstruction'];
+function lastmod(p) {
+  const file = (p === '' ? 'index' : p) + '.html';
+  try { return execSync(`git log -1 --format=%cs -- "${file}"`, { encoding: 'utf8' }).trim() || today; }
+  catch (e) { return today; }
+}
 
 function listHtml(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap(e => {
@@ -15,14 +22,14 @@ function listHtml(dir) {
 
 const urls = listHtml('.')
   .map(p => p.replace(/^\.\//, '').replace(/\.html$/, ''))
-  .filter(p => p !== '404')
+  .filter(p => !EXCLUDE.includes(p))
   .map(p => (p === 'index' ? '' : p))
   .sort((a, b) => (a === '' ? -1 : b === '' ? 1 : a.localeCompare(b)));
 
 const xml =
   '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-  urls.map(p => `  <url>\n    <loc>${SITE}/${p}</loc>\n    <lastmod>${today}</lastmod>\n  </url>`).join('\n') +
+  urls.map(p => `  <url>\n    <loc>${SITE}/${p}</loc>\n    <lastmod>${lastmod(p)}</lastmod>\n  </url>`).join('\n') +
   '\n</urlset>\n';
 
 fs.writeFileSync('sitemap.xml', xml);

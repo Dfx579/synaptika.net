@@ -480,7 +480,9 @@ if (localStorage.getItem('cookiesAccepted') === 'true') {
     
     if (container && typeof posts !== 'undefined') {
         container.innerHTML = '';
-        const latestPosts = posts.slice(0, 3);
+        const bowenTmsPost = posts.find(p => p.file && p.file.includes('bowen-tms'));
+        const otherPosts = posts.filter(p => p.file && !p.file.includes('bowen-tms'));
+        const latestPosts = bowenTmsPost ? [bowenTmsPost, ...otherPosts.slice(0, 2)] : otherPosts.slice(0, 3);
         
         latestPosts.forEach(post => {
             const postCard = document.createElement('div');

@@ -266,7 +266,7 @@ const posts = [
     category: "Nutrition créole"
   },
   {
-    title: "La NST Bowen : une solution révolutionnaire pour les manutentionnaires face aux TMS 💪",
+    title: "La NST Bowen : une approche douce pour les manutentionnaires soucieux de leur bien-être",
     file: "./blog/bowen-tms",
     excerpt: "Le quotidien douloureux des manutentionnaires : comprendre pour mieux agir",
     date: "",
